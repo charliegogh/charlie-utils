@@ -49,3 +49,16 @@ export const sum = function (arr) {
         return Number(prev) + Number(curr)
     })
 }
+
+/**
+ * @param data
+ * @param key
+ * @returns {*}
+ * 数组转化为类数组
+ */
+export function arrayToObject(data, key) {
+    return data.reduce((res, v) => {
+        res[v[key]] = { ...(res[v[key]] || {}), ...v }
+        return res
+    }, {})
+}
