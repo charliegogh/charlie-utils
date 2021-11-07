@@ -50,7 +50,7 @@ export const sum = function (arr) {
     })
 }
 
-/**
+/**  
  * @param data
  * @param key
  * @returns {*}
