@@ -1,4 +1,8 @@
-/* 深拷贝 */
+/**
+ * @param source
+ * @returns {*[]}
+ * 深拷贝
+ */
 export function deepClone(source) {
     if (!source && typeof source !== 'object') {
         throw new Error('error arguments', 'deepClone')
@@ -14,7 +18,10 @@ export function deepClone(source) {
     return targetObj
 }
 
-/* 生成随机id */
+/**
+ * @returns {string}
+ * 生成随机id
+ */
 export const createUUID = function () {
     var d = new Date().getTime()
     if (window.performance && typeof window.performance.now === 'function') {
@@ -27,30 +34,40 @@ export const createUUID = function () {
     })
     return uuid
 }
-/* 数组去重 */
+/**
+ * @param arr
+ * @returns {any[]}
+ * 数组去重
+ */
 export const unique = function (arr) {
     return Array.from(new Set(arr))
 }
-
-/* 数组对象去重 */
-export const deWeightThree = function (arr, tag) {
+/**
+ * @param arr tag
+ * @returns {any[]}
+ * 数组对象去重
+ */
+export const deWeightThree = function (arr, key) {
     const map = new Map()
     for (const item of arr) {
-        if (!map.has(item[tag])) {
-            map.set(item[tag], item)
+        if (!map.has(item[key])) {
+            map.set(item[key], item)
         }
     }
     return [...map.values()]
 }
-
-/* 数组求和 */
+/**
+ * @param arr
+ * @returns {*}
+ * 数组求和
+ */
 export const sum = function (arr) {
     return arr.reduce(function (prev, curr, idx, arr) {
         return Number(prev) + Number(curr)
     })
 }
 
-/**  
+/**
  * @param data
  * @param key
  * @returns {*}
