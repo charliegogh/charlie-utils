@@ -1,4 +1,16 @@
 /**
+ * @param str
+ * @param substr
+ * @param newstr
+ * @returns {*}
+ * 字符串替换
+ */
+export function replaceString(str, substr, newstr) {
+    substr = substr.replace(/[.\\[\]{}()|^$?*+]/g, '\\$&') // 转义字符串中的元字符
+    var re = new RegExp(substr, 'g') // 生成正则
+    return str.replace(re, newstr)
+}
+/**
  * @param source
  * @returns {*[]}
  * 深拷贝
