@@ -1,4 +1,6 @@
 ## index 
+
+- replaceString 查找字符并替换
 - deepClone(source) 深拷贝
 - createUUID 生成随机id
 - unique(arr) 数组去重
@@ -23,3 +25,7 @@
 ## storage 本地缓存
 
 ## scrollTo 滚动到指定位置（动画）
+
+## filters 
+
+- formatTimeBefore 时间转换成几分钟、几小时前、几天前

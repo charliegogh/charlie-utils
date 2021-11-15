@@ -3,7 +3,7 @@
  * @returns {string|*}
  * js将时间转换为几分钟前，几小时前，几天前
  */
-export const formatTime = function(time) {
+export const formatTimeBefore = function(time) {
     const nowTime = new Date()
     const day = nowTime.getDate()
     const hours = parseInt(nowTime.getHours())
