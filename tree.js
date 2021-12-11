@@ -1,5 +1,8 @@
 /* 树查找 */
 export const findTree = function (tree, func) {
+    if (!Array.isArray(tree)){
+        return
+    }
     for (const data of tree) {
         if (func(data)) return data
         if (data.children) {
@@ -7,7 +10,7 @@ export const findTree = function (tree, func) {
             if (res) return res
         }
     }
-    return null
+
 }
 /**
  * @param tree

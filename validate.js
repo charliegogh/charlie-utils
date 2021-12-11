@@ -48,4 +48,11 @@ export const checkCardNo = (value) => {
     return reg.test(value);
 };
 
-
+/**
+ * @param path
+ * @returns {boolean}
+ * 汉字、字母、数字、下划线、短横线、括号、书名号
+ */
+export function validName(path) {
+    return /^[a-zA-Z0-9_()-（）《》\u4e00-\u9fa5]+$/.test(path.split('.')[0]);
+}
