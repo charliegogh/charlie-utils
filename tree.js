@@ -18,7 +18,7 @@ export const findTree = function (tree, func) {
  */
 export const flattenTree = function (tree) {
     return tree.reduce((arr, item) => {
-        arr.concat([item], flattenTree(item.children || []))
+        return arr.concat([item], flattenTree(item.children || []))
     }, [])
 }
 /**
@@ -34,4 +34,13 @@ export const listToTree = function (list) {
     })
 }
 
-/* 获取所有父级 */
+// 数组对象去重
+export function deWeightThree(arr, tag) {
+    const map = new Map()
+    for (const item of arr) {
+        if (!map.has(item[tag])) {
+            map.set(item[tag], item)
+        }
+    }
+    return [...map.values()]
+}
