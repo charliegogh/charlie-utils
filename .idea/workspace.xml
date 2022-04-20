@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/filters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tree.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,6 +56,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jeecg-boot-vue3-main" />
@@ -139,7 +142,12 @@
       <workItem from="1640831469018" duration="2186000" />
       <workItem from="1641782729120" duration="600000" />
       <workItem from="1649728993645" duration="62000" />
-      <workItem from="1649729068872" duration="87000" />
+      <workItem from="1649729068872" duration="167000" />
+      <workItem from="1649830619527" duration="600000" />
+      <workItem from="1650337194847" duration="246000" />
+      <workItem from="1650337477385" duration="5482000" />
+      <workItem from="1650439242941" duration="162000" />
+      <workItem from="1650439414216" duration="3754000" />
     </task>
     <servers />
   </component>
@@ -156,47 +164,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="706" y="295" key="FileChooserDialogImpl" timestamp="1636697426644">
-      <screen x="0" y="0" width="1853" height="1080" />
-    </state>
-    <state x="706" y="295" key="FileChooserDialogImpl/0.0.1853.1080/-1858.0.1858.1080@0.0.1853.1080" timestamp="1636697426644" />
-    <state width="1837" height="263" key="GridCell.Tab.0.bottom" timestamp="1638849792783">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1830" height="221" key="GridCell.Tab.0.bottom/0.0.1851.1080@0.0.1851.1080" timestamp="1636287961685" />
-    <state width="1832" height="328" key="GridCell.Tab.0.bottom/0.0.1853.1080/-1858.0.1858.1080@0.0.1853.1080" timestamp="1635729595789" />
-    <state width="1832" height="339" key="GridCell.Tab.0.bottom/0.0.1853.1080@0.0.1853.1080" timestamp="1635691267889" />
-    <state width="1837" height="263" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1858.0.1858.1080@0.0.1858.1080" timestamp="1638849792783" />
-    <state width="1837" height="263" key="GridCell.Tab.0.center" timestamp="1638849792782">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1830" height="221" key="GridCell.Tab.0.center/0.0.1851.1080@0.0.1851.1080" timestamp="1636287961685" />
-    <state width="1832" height="328" key="GridCell.Tab.0.center/0.0.1853.1080/-1858.0.1858.1080@0.0.1853.1080" timestamp="1635729595789" />
-    <state width="1832" height="339" key="GridCell.Tab.0.center/0.0.1853.1080@0.0.1853.1080" timestamp="1635691267889" />
-    <state width="1837" height="263" key="GridCell.Tab.0.center/0.0.1858.1080/-1858.0.1858.1080@0.0.1858.1080" timestamp="1638849792782" />
-    <state width="1837" height="263" key="GridCell.Tab.0.left" timestamp="1638849792782">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1830" height="221" key="GridCell.Tab.0.left/0.0.1851.1080@0.0.1851.1080" timestamp="1636287961685" />
-    <state width="1832" height="328" key="GridCell.Tab.0.left/0.0.1853.1080/-1858.0.1858.1080@0.0.1853.1080" timestamp="1635729595789" />
-    <state width="1832" height="339" key="GridCell.Tab.0.left/0.0.1853.1080@0.0.1853.1080" timestamp="1635691267889" />
-    <state width="1837" height="263" key="GridCell.Tab.0.left/0.0.1858.1080/-1858.0.1858.1080@0.0.1858.1080" timestamp="1638849792782" />
-    <state width="1837" height="263" key="GridCell.Tab.0.right" timestamp="1638849792783">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1830" height="221" key="GridCell.Tab.0.right/0.0.1851.1080@0.0.1851.1080" timestamp="1636287961685" />
-    <state width="1832" height="328" key="GridCell.Tab.0.right/0.0.1853.1080/-1858.0.1858.1080@0.0.1853.1080" timestamp="1635729595789" />
-    <state width="1832" height="339" key="GridCell.Tab.0.right/0.0.1853.1080@0.0.1853.1080" timestamp="1635691267889" />
-    <state width="1837" height="263" key="GridCell.Tab.0.right/0.0.1858.1080/-1858.0.1858.1080@0.0.1858.1080" timestamp="1638849792783" />
-    <state x="427" y="184" key="SettingsEditor" timestamp="1635729540555">
-      <screen x="0" y="0" width="1853" height="1080" />
-    </state>
-    <state x="427" y="184" key="SettingsEditor/0.0.1853.1080/-1858.0.1858.1080@0.0.1853.1080" timestamp="1635729540555" />
-    <state x="631" y="272" width="596" height="536" key="find.popup" timestamp="1638166670554">
-      <screen x="0" y="0" width="1858" height="1080" />
-    </state>
-    <state x="631" y="272" width="596" height="536" key="find.popup/0.0.1858.1080/-1920.0.1920.1040@0.0.1858.1080" timestamp="1638166670554" />
   </component>
 </project>
