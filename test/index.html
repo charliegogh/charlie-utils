@@ -21,18 +21,12 @@
                 {
                     name:'1-2',
                     id:'1-2',
-                    children:[
-                        {
-
-                            name:'1-2-1',
-                            id:'1-2-1'
-                        }
-                    ]
                 }
             ]
         }
     ]
-    const rs = tree.filter(data,(item)=>(item.id==='1-2-1'))
-    console.log(rs)
+     tree.removeNode(data,(item)=>(item.id==='1-1'))
+    console.log([...data])
+    console.log([data])
 </script>
 </html>

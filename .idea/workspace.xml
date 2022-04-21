@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree2.js" beforeDir="false" afterPath="$PROJECT_DIR$/tree2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jeecg-boot-vue3-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,12 +74,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\charlie\npm\utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\charlie\utils" />
       <recent name="D:\charlie\npm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.tree.js (1)">
@@ -92,9 +95,20 @@
     <configuration name="tree.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/utils/tree.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepublishOnly" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.tree.js (1)" />
+        <item itemvalue="npm.prepublishOnly" />
         <item itemvalue="Node.js.tree.js (2)" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.tree.js" />
@@ -147,7 +161,7 @@
       <workItem from="1650337194847" duration="246000" />
       <workItem from="1650337477385" duration="5482000" />
       <workItem from="1650439242941" duration="162000" />
-      <workItem from="1650439414216" duration="3754000" />
+      <workItem from="1650439414216" duration="23569000" />
     </task>
     <servers />
   </component>
