@@ -20,20 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tree2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/filters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tree2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/check.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\utils" />
       <recent name="D:\charlie\npm" />
     </key>
@@ -90,7 +85,16 @@
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prepublishOnly">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/utils/test/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/index.js" working-dir="$PROJECT_DIR$/test">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/index.js" working-dir="$PROJECT_DIR$/lib">
+      <method v="2" />
+    </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -98,9 +102,6 @@
       <method v="2" />
     </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/index.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="tree.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/utils/tree.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="tree.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/tree.js" working-dir="$PROJECT_DIR$">
@@ -119,9 +120,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.prepublishOnly" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.index.js (2)" />
         <item itemvalue="Node.js.index.js (1)" />
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.tree.js (2)" />
         <item itemvalue="Node.js.index.js" />
       </list>
     </recent_temporary>
@@ -172,7 +173,8 @@
       <workItem from="1650337194847" duration="246000" />
       <workItem from="1650337477385" duration="5482000" />
       <workItem from="1650439242941" duration="162000" />
-      <workItem from="1650439414216" duration="27617000" />
+      <workItem from="1650439414216" duration="28383000" />
+      <workItem from="1650587959585" duration="7278000" />
     </task>
     <servers />
   </component>
