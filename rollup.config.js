@@ -6,7 +6,7 @@ export default {
     output: {
         file: 'dist/index.js',
         format: 'umd',
-        name:'charlie-utils'
+        name:'charlieUtils'
     },
     plugins: [
         commonjs(),
