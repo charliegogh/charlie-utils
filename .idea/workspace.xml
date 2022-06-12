@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/filter/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arr.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arr.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/format.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.35" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../charlie-template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,34 +93,17 @@
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js (1)">
+  <component name="RunManager" selected="npm.prepublishOnly">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/utils/test/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/index.js" working-dir="$PROJECT_DIR$/test">
+    <configuration name="arr.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/arr.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/index.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="lint-fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint-fix" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="format.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/format.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
     <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -142,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="npm.prepublishOnly" />
-        <item itemvalue="npm.lint-fix" />
-        <item itemvalue="npm.lint" />
-        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.arr.js" />
+        <item itemvalue="Node.js.app.js (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.format.js" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +179,18 @@
       <workItem from="1652403362025" duration="1752000" />
       <workItem from="1652434023437" duration="157000" />
       <workItem from="1652662453338" duration="4469000" />
-      <workItem from="1652671783458" duration="4213000" />
+      <workItem from="1652671783458" duration="5011000" />
+      <workItem from="1652752573198" duration="2146000" />
+      <workItem from="1653531113586" duration="1281000" />
+      <workItem from="1653535798406" duration="1018000" />
+      <workItem from="1653635739403" duration="718000" />
+      <workItem from="1653891321166" duration="8348000" />
+      <workItem from="1654501375397" duration="804000" />
+      <workItem from="1654591416696" duration="1427000" />
+      <workItem from="1654651586123" duration="1194000" />
+      <workItem from="1654658995656" duration="2549000" />
+      <workItem from="1654689465554" duration="4351000" />
+      <workItem from="1655043244482" duration="231000" />
     </task>
     <servers />
   </component>
