@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/moment.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,8 +116,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.prepublishOnly" />
-        <item itemvalue="Node.js.arr.js" />
         <item itemvalue="Node.js.app.js (1)" />
+        <item itemvalue="Node.js.arr.js" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.format.js" />
       </list>
@@ -188,6 +189,10 @@
       <workItem from="1654689465554" duration="4351000" />
       <workItem from="1655043244482" duration="3965000" />
       <workItem from="1655448309366" duration="1235000" />
+      <workItem from="1655879704914" duration="1211000" />
+      <workItem from="1656054805823" duration="104000" />
+      <workItem from="1656059452668" duration="594000" />
+      <workItem from="1657007785441" duration="1412000" />
     </task>
     <servers />
   </component>
