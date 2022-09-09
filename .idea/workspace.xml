@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/object.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +72,11 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.35" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../charlie-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,7 +98,7 @@
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prepublishOnly">
+  <component name="RunManager" selected="Node.js.app.js (1)">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/utils/test/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -100,7 +108,7 @@
     <configuration name="arr.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/arr.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
-    <configuration name="format.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/format.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration name="object.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/object.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
     <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -115,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.prepublishOnly" />
         <item itemvalue="Node.js.app.js (1)" />
+        <item itemvalue="Node.js.object.js" />
         <item itemvalue="Node.js.arr.js" />
+        <item itemvalue="npm.prepublishOnly" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Node.js.format.js" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +201,19 @@
       <workItem from="1656054805823" duration="104000" />
       <workItem from="1656059452668" duration="594000" />
       <workItem from="1657007785441" duration="1412000" />
+      <workItem from="1657614383309" duration="832000" />
+      <workItem from="1657680553018" duration="1277000" />
+      <workItem from="1658132983322" duration="10204000" />
+      <workItem from="1659423416647" duration="2203000" />
+      <workItem from="1659575699610" duration="647000" />
+      <workItem from="1659577154235" duration="1522000" />
+      <workItem from="1659625068136" duration="650000" />
+      <workItem from="1659686720837" duration="1138000" />
+      <workItem from="1661310970429" duration="3569000" />
+      <workItem from="1661415165460" duration="4763000" />
+      <workItem from="1662085000837" duration="3489000" />
+      <workItem from="1662606294269" duration="1842000" />
+      <workItem from="1662702730087" duration="593000" />
     </task>
     <servers />
   </component>

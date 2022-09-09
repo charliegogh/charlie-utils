@@ -1,3 +1,2 @@
-const { checkPassword } = require('../dist/index')
+const _ = require('../lib/index')
 
-console.log(checkPassword('111'))
