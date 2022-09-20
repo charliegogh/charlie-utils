@@ -20,16 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/filter/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/valid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/format.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +99,12 @@
       <recent name="D:\charlie\npm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\utils\lib" />
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js (1)">
+  <component name="RunManager" selected="npm.prepublishOnly">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/utils/test/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -123,10 +129,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.prepublishOnly" />
         <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="Node.js.object.js" />
         <item itemvalue="Node.js.arr.js" />
-        <item itemvalue="npm.prepublishOnly" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -214,6 +220,8 @@
       <workItem from="1662085000837" duration="3489000" />
       <workItem from="1662606294269" duration="1842000" />
       <workItem from="1662702730087" duration="593000" />
+      <workItem from="1663208903089" duration="10572000" />
+      <workItem from="1663307296210" duration="2006000" />
     </task>
     <servers />
   </component>

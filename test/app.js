@@ -1,2 +1,2 @@
-const _ = require('../lib/index')
-
+const { _: { createUUID }} = require('../lib')
+console.log(createUUID())
