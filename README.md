@@ -16,7 +16,7 @@
 - merge 对象深层合并
 - deepClone 深拷贝
 
-## arr
+## array
 
 - append 数组末尾添加
 - prepend 数组首位添加

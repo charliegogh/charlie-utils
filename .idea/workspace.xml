@@ -20,21 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/filter/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/valid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/format.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/object.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,27 +86,37 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\utils" />
+      <recent name="D:\charlie\utils\lib" />
+      <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\npm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\charlie\utils" />
       <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\utils\lib" />
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prepublishOnly">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/utils/test/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-rollup" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
-      <method v="2" />
-    </configuration>
-    <configuration name="arr.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/arr.js" working-dir="$PROJECT_DIR$/lib">
-      <method v="2" />
-    </configuration>
-    <configuration name="object.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/object.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -127,13 +129,33 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="publish (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/dist/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="publish" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="publish" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.build-rollup" />
+        <item itemvalue="npm.publish (1)" />
+        <item itemvalue="npm.publish" />
         <item itemvalue="npm.prepublishOnly" />
-        <item itemvalue="Node.js.app.js (1)" />
-        <item itemvalue="Node.js.object.js" />
-        <item itemvalue="Node.js.arr.js" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +243,7 @@
       <workItem from="1662606294269" duration="1842000" />
       <workItem from="1662702730087" duration="593000" />
       <workItem from="1663208903089" duration="10572000" />
-      <workItem from="1663307296210" duration="2006000" />
+      <workItem from="1663307296210" duration="15402000" />
     </task>
     <servers />
   </component>
