@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,20 @@
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.build-publish">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
+      <method v="2" />
+    </configuration>
+    <configuration name="build-publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-publish" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -114,26 +129,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prepublishOnly" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prepublishOnly" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="publish (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/dist/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="publish" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -146,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build-publish" />
+        <item itemvalue="npm.publish" />
+        <item itemvalue="Node.js.app.js" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.build-rollup" />
-        <item itemvalue="npm.publish (1)" />
-        <item itemvalue="npm.publish" />
-        <item itemvalue="npm.prepublishOnly" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +234,23 @@
       <workItem from="1662702730087" duration="593000" />
       <workItem from="1663208903089" duration="10572000" />
       <workItem from="1663307296210" duration="15402000" />
-      <workItem from="1665478441212" duration="969000" />
+      <workItem from="1665478441212" duration="1209000" />
+      <workItem from="1665537774425" duration="2815000" />
+      <workItem from="1665714449247" duration="1040000" />
+      <workItem from="1665726630156" duration="678000" />
+      <workItem from="1665732195391" duration="632000" />
+      <workItem from="1667551912856" duration="1388000" />
+      <workItem from="1667878709206" duration="1393000" />
+      <workItem from="1667960002800" duration="632000" />
+      <workItem from="1668060407528" duration="1445000" />
+      <workItem from="1668685758328" duration="608000" />
+      <workItem from="1668751603791" duration="4049000" />
+      <workItem from="1668929652924" duration="595000" />
+      <workItem from="1669541176037" duration="1919000" />
+      <workItem from="1669786919076" duration="609000" />
+      <workItem from="1669880691870" duration="616000" />
+      <workItem from="1669900939418" duration="617000" />
+      <workItem from="1670410577757" duration="3242000" />
     </task>
     <servers />
   </component>
