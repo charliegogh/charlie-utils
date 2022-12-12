@@ -7,7 +7,7 @@ export default {
   output: {
     file: 'dist/app.js',
     format: 'umd',
-    name: 'charlieUtils'
+    name: '_'
   },
   plugins: [
     commonjs(),

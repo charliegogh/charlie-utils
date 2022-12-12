@@ -1,5 +1,13 @@
 # utils 集合
 
+## _
+
+- 获取富文本的纯文字内容
+- 解析URL参数
+- uuid
+- 滚动到页面顶部
+- 检查设备类型 
+
 ## tree
 
 - findNode 树查找 1、解构子级查找 2、递归
@@ -27,9 +35,12 @@
 - pull 删除数组中指定的值
 - sum 求和
 - average 平均值
-- unique 去重
-- unique 去重
+- unique 数组去重
 - deWeightThree 数组对象去重
+- orderBy 根据传递顺序使用数组解构来交换位置
+- arrayMax 最大值
+- arrayMin 最小值
+
 
 ## valid
 
@@ -47,6 +58,11 @@
 - formatDateYY 时间（年）
 - formatDateMM 时间（秒）
 - hideMobile 手机号脱敏
+- toFixed 四舍五入
+
+## date 
+
+- dataDiff 计算天数差
 
 ## storage 本地缓存
 
