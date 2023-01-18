@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/format.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/object.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -259,7 +252,14 @@
       <workItem from="1669900939418" duration="617000" />
       <workItem from="1670410577757" duration="3242000" />
       <workItem from="1670490023376" duration="623000" />
-      <workItem from="1670812704811" duration="4749000" />
+      <workItem from="1670812704811" duration="6652000" />
+      <workItem from="1671170947987" duration="638000" />
+      <workItem from="1671729835874" duration="2233000" />
+      <workItem from="1671734657792" duration="4000" />
+      <workItem from="1673255166664" duration="3772000" />
+      <workItem from="1673487092279" duration="3302000" />
+      <workItem from="1673505296688" duration="594000" />
+      <workItem from="1673576231677" duration="1190000" />
     </task>
     <servers />
   </component>
