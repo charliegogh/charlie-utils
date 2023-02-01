@@ -2,11 +2,12 @@
 
 ## _
 
-- 获取富文本的纯文字内容
-- 解析URL参数
-- uuid
-- 滚动到页面顶部
-- 检查设备类型 
+- getPlainText 获取富文本的纯文字内容
+- getSearchParams 解析URL参数
+- smoothScroll 滚动到元素位置 
+- createUUID uuid
+- scrollToTop 滚动到页面顶部
+- judgeDeviceType 检查设备类型 
 
 ## tree
 
@@ -21,11 +22,14 @@
 
 ## object
 
+- isObject 是否为对象
 - merge 对象深层合并
-- deepClone 深拷贝
+- deepClone 对象深拷贝
+- isEmpty 检测对象是否为空
 
 ## array
 
+- isArray 是否为数组
 - append 数组末尾添加
 - prepend 数组首位添加
 - insert 数组插入
@@ -37,9 +41,10 @@
 - average 平均值
 - unique 数组去重
 - deWeightThree 数组对象去重
-- orderBy 根据传递顺序使用数组解构来交换位置
+- orderBy 排序对象数组
 - arrayMax 最大值
 - arrayMin 最小值
+
 
 
 ## valid
