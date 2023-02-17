@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/object.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +46,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/storage.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -256,7 +254,13 @@
       <workItem from="1673487092279" duration="3302000" />
       <workItem from="1673505296688" duration="594000" />
       <workItem from="1673576231677" duration="1190000" />
-      <workItem from="1675233181030" duration="4624000" />
+      <workItem from="1675233181030" duration="8143000" />
+      <workItem from="1675392812468" duration="1873000" />
+      <workItem from="1675645074300" duration="4601000" />
+      <workItem from="1675927117255" duration="3108000" />
+      <workItem from="1675998238836" duration="2418000" />
+      <workItem from="1676251086440" duration="2820000" />
+      <workItem from="1676601936725" duration="741000" />
     </task>
     <servers />
   </component>
