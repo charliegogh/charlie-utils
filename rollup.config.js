@@ -6,7 +6,7 @@ export default {
   input: './lib/',
   output: {
     file: 'dist/app.js',
-    format: 'umd',
+    format: 'es',
     name: '_'
   },
   plugins: [

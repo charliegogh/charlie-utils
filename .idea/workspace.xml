@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +50,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/lib/storage.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/date.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/format.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/scrollTo.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/storage.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/tree.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dist/valid.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Documents/WeChat Files/wxid_zcb0zrxcrw5621/FileStorage/File/2023-02/vatForm-5.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/Documents/WeChat Files/wxid_zcb0zrxcrw5621/FileStorage/File/2023-02/util.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/Documents/WeChat Files/wxid_zcb0zrxcrw5621/FileStorage/File/2023-02/xlsxStyle.utils.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/rollup.config.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -96,7 +103,7 @@
       <recent name="D:\charlie\npm\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build-publish">
+  <component name="RunManager" selected="npm.build-rollup">
     <configuration name="单例.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/单例.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
@@ -135,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build-rollup" />
         <item itemvalue="npm.build-publish" />
         <item itemvalue="Node.js.单例.js" />
-        <item itemvalue="npm.build-rollup" />
         <item itemvalue="npm.publish" />
         <item itemvalue="Node.js.app.js" />
       </list>
@@ -261,6 +268,11 @@
       <workItem from="1675998238836" duration="2418000" />
       <workItem from="1676251086440" duration="2820000" />
       <workItem from="1676601936725" duration="741000" />
+      <workItem from="1676862488937" duration="2604000" />
+      <workItem from="1677033120760" duration="4666000" />
+      <workItem from="1677113859921" duration="595000" />
+      <workItem from="1678955543881" duration="1254000" />
+      <workItem from="1679014503021" duration="1184000" />
     </task>
     <servers />
   </component>
