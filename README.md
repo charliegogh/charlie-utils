@@ -44,6 +44,7 @@
 - orderBy 排序对象数组
 - arrayMax 最大值
 - arrayMin 最小值
+- hasDuplicates 判断判断数组中是否包含重复数据
 
 
 
@@ -71,3 +72,6 @@
 
 ## storage 本地缓存
 
+## text
+
+- replaceSpecialCharacters 替换特殊字符集合
