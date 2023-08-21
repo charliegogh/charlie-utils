@@ -23,10 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/Crypto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FeHelper-20230630090316.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Crypto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,20 +75,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/utils/charlie-utils/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\utils\charlie-utils\test" />
@@ -105,6 +106,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="Crypto.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/Crypto.js" working-dir="$PROJECT_DIR$/test">
+      <method v="2" />
+    </configuration>
     <configuration name="_.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/_.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
@@ -124,23 +128,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build-rollup" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.Crypto.js" />
         <item itemvalue="Node.js._.js" />
         <item itemvalue="Node.js.timeline.js" />
         <item itemvalue="npm.build-publish" />
-        <item itemvalue="npm.build-rollup" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +278,22 @@
       <workItem from="1688086509164" duration="3586000" />
       <workItem from="1688365408380" duration="2229000" />
       <workItem from="1688607193569" duration="444000" />
+      <workItem from="1688722948186" duration="1511000" />
+      <workItem from="1689299305595" duration="1448000" />
+      <workItem from="1689669869777" duration="1687000" />
+      <workItem from="1689763351952" duration="904000" />
+      <workItem from="1689812788599" duration="588000" />
+      <workItem from="1689816804920" duration="1919000" />
+      <workItem from="1689900862484" duration="577000" />
+      <workItem from="1689918238402" duration="588000" />
+      <workItem from="1689919312810" duration="591000" />
+      <workItem from="1690160013181" duration="1354000" />
+      <workItem from="1690205952139" duration="1667000" />
+      <workItem from="1690250687078" duration="594000" />
+      <workItem from="1690529948128" duration="2696000" />
+      <workItem from="1690868199884" duration="954000" />
+      <workItem from="1690937338991" duration="2585000" />
+      <workItem from="1691368269629" duration="680000" />
     </task>
     <servers />
   </component>
