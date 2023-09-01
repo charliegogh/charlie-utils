@@ -23,15 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/string.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tree/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tree/删除保留子节点.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.balbelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/useMindDisplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timeline.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/moment.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/moment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/crypto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tree/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/tree/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/lib&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,11 +98,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\test" />
       <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\utils" />
       <recent name="D:\charlie\utils\lib" />
-      <recent name="D:\charlie\npm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\utils\charlie-utils\md" />
@@ -111,7 +112,7 @@
       <recent name="D:\charlie\utils\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.删除保留子节点.js">
+  <component name="RunManager" selected="npm.build-rollup">
     <configuration name="删除保留子节点.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/tree/删除保留子节点.js" working-dir="$PROJECT_DIR$/test/tree">
       <method v="2" />
     </configuration>
@@ -121,19 +122,26 @@
     <configuration name="data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/tree/data.js" working-dir="$PROJECT_DIR$/test/tree">
       <method v="2" />
     </configuration>
-    <configuration name="string.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/string.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
+    <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-rollup" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.删除保留子节点.js" />
+        <item itemvalue="npm.build-rollup" />
         <item itemvalue="Node.js.data.js" />
+        <item itemvalue="Node.js.删除保留子节点.js" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.string.js" />
       </list>
     </recent_temporary>
   </component>
@@ -297,11 +305,26 @@
       <workItem from="1692752559043" duration="6030000" />
       <workItem from="1693153548271" duration="6129000" />
       <workItem from="1693223120136" duration="8383000" />
+      <workItem from="1693303641207" duration="3608000" />
+      <workItem from="1693445581708" duration="5427000" />
+      <workItem from="1693543243039" duration="843000" />
+      <workItem from="1693550509105" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
