@@ -17,7 +17,7 @@ export default {
     commonjs(),
     resolve(),
     // eslint(),
-    // terser()
+    terser()
   ],
   // external: ['moment']
 }

@@ -23,16 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.balbelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/useMindDisplay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timeline.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/useMindDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/useMindDisplay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tree/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/tree/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,6 +302,20 @@
       <workItem from="1693445581708" duration="5427000" />
       <workItem from="1693543243039" duration="843000" />
       <workItem from="1693550509105" duration="1000" />
+      <workItem from="1693811063768" duration="565000" />
+      <workItem from="1694151375634" duration="668000" />
+      <workItem from="1694276938953" duration="1752000" />
+      <workItem from="1694357864696" duration="584000" />
+      <workItem from="1694413184169" duration="1725000" />
+      <workItem from="1694487395760" duration="1732000" />
+      <workItem from="1695012996972" duration="1113000" />
+      <workItem from="1695093975125" duration="1165000" />
+      <workItem from="1695208226027" duration="1209000" />
+      <workItem from="1695351492814" duration="595000" />
+      <workItem from="1695369369406" duration="1143000" />
+      <workItem from="1695543703020" duration="851000" />
+      <workItem from="1695801487940" duration="581000" />
+      <workItem from="1695802935681" duration="211000" />
     </task>
     <servers />
   </component>
