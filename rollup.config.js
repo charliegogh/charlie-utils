@@ -5,18 +5,29 @@ import babel from 'rollup-plugin-babel';
 
 // import { eslint } from 'rollup-plugin-eslint';
 export default {
-  input: './lib/useMindDisplay.js',
+  input: './lib/index.js',
   output: {
     file: 'dist/app.js',
-    format: 'iife',
+    // format: 'iife',
     // format: 'es',
-    // format: 'umd',
-    name: 'MindDisplay'
+    format: 'umd',
+    name: 'xe-plugin'
   },
   plugins: [
     commonjs(),
     resolve(),
     // eslint(),
+    babel({
+      exclude: 'node_modules/**', // 不编译node_modules下的代码
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: '> 0.25%, not dead', // 目标浏览器
+          },
+        ],
+      ],
+    }),
     terser()
   ],
   // external: ['moment']
