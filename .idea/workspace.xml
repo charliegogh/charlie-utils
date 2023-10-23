@@ -23,33 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/AsyncDataStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/NotePanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/stack/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/stack/stack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/crypto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scrollTo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/string.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/text.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/useMindDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/valid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/useMindDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/useMindDisplay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,16 +93,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\test" />
-      <recent name="E:\utils\charlie-utils\tmps" />
-      <recent name="E:\utils\charlie-utils\lib\xe-plugin" />
-      <recent name="E:\utils\charlie-utils\dist" />
+      <recent name="D:\charlie\utils\test" />
+      <recent name="D:\charlie\utils" />
+      <recent name="D:\charlie\utils\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\utils\charlie-utils" />
       <recent name="E:\utils\charlie-utils\md" />
       <recent name="E:\utils\charlie-utils\lib" />
       <recent name="D:\charlie\utils" />
       <recent name="D:\charlie\utils\test" />
+      <recent name="D:\charlie\utils\lib" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build-rollup">
@@ -139,14 +115,7 @@
     <configuration name="data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/tree/data.js" working-dir="$PROJECT_DIR$/test/tree">
       <method v="2" />
     </configuration>
-    <configuration name="build-publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build-publish" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
     <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -162,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build-rollup" />
-        <item itemvalue="npm.build-publish" />
-        <item itemvalue="Node.js.app.js" />
         <item itemvalue="Node.js.data.js" />
         <item itemvalue="Node.js.删除保留子节点.js" />
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -347,23 +316,6 @@
       <workItem from="1695543703020" duration="851000" />
       <workItem from="1695801487940" duration="581000" />
       <workItem from="1695802935681" duration="211000" />
-      <workItem from="1696498433410" duration="1871000" />
-      <workItem from="1696641046785" duration="1446000" />
-      <workItem from="1696831096738" duration="1179000" />
-      <workItem from="1696833320470" duration="1060000" />
-      <workItem from="1696985944683" duration="1872000" />
-      <workItem from="1697076917362" duration="7231000" />
-      <workItem from="1697104838981" duration="1875000" />
-      <workItem from="1697186569798" duration="4762000" />
-      <workItem from="1697293364822" duration="28000" />
-      <workItem from="1697443966622" duration="4100000" />
-      <workItem from="1697512674917" duration="11095000" />
-      <workItem from="1697594968977" duration="4143000" />
-      <workItem from="1697617893948" duration="2527000" />
-      <workItem from="1697629105997" duration="708000" />
-      <workItem from="1697684939962" duration="1718000" />
-      <workItem from="1697701088955" duration="712000" />
-      <workItem from="1697772897152" duration="3137000" />
     </task>
     <servers />
   </component>
