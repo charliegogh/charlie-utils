@@ -1,6 +1,6 @@
 {
   "name": "charlie-utils",
-  "version": "2.1.53",
+  "version": "2.1.54",
   "description": "",
   "main": "/lib/index.js",
   "scripts": {

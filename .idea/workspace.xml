@@ -23,9 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/copy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/useMindDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/useMindDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/crypto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/string.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/useMindDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/filter/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tree/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tree/删除保留子节点.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,25 +91,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/lib&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/utils/charlie-utils/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\test" />
+      <recent name="E:\utils\charlie-utils\lib" />
       <recent name="D:\charlie\utils\test" />
       <recent name="D:\charlie\utils" />
       <recent name="D:\charlie\utils\lib" />
@@ -316,6 +333,25 @@
       <workItem from="1695543703020" duration="851000" />
       <workItem from="1695801487940" duration="581000" />
       <workItem from="1695802935681" duration="211000" />
+      <workItem from="1698112827546" duration="262000" />
+      <workItem from="1698133034134" duration="6922000" />
+      <workItem from="1698300285432" duration="613000" />
+      <workItem from="1698392353781" duration="686000" />
+      <workItem from="1698457813994" duration="126000" />
+      <workItem from="1698563844470" duration="794000" />
+      <workItem from="1698630808052" duration="754000" />
+      <workItem from="1698715220535" duration="1120000" />
+      <workItem from="1698716752273" duration="719000" />
+      <workItem from="1698721350545" duration="9000" />
+      <workItem from="1698723812818" duration="3499000" />
+      <workItem from="1698823089798" duration="2493000" />
+      <workItem from="1698829036188" duration="1395000" />
+      <workItem from="1698907999628" duration="2973000" />
+      <workItem from="1698972722545" duration="1196000" />
+      <workItem from="1698994801859" duration="1759000" />
+      <workItem from="1699102590423" duration="1260000" />
+      <workItem from="1699256827769" duration="4972000" />
+      <workItem from="1699326116874" duration="2232000" />
     </task>
     <servers />
   </component>
