@@ -23,26 +23,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ErrorMonitor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/x-axios/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/x-axios/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/x-axios/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/x-axios/js-cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/x-axios/refreshToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ErrorMonitor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/x-axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.balbelrc" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/多维excel处理.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/app唤起/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/qrcode.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/vconsole.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/x-axios/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/x-axios/x-axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/axios/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/axios/js-cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/axios/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/anonymization.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cookie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/crypto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/string.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/x-axios/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/x-axios/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/x-axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/x-axios/js-cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/x-axios/refreshToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/refreshToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/openApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/moment.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/moment.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ShippingAddress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ErrorMonitor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-axios.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,46 +108,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/utils/charlie-utils/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\Program Files\\JetBrains\\WebStorm 2023.1.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/output/x-axios&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\WebStorm 2023.1.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\output\x-axios" />
       <recent name="E:\utils\charlie-utils\test" />
       <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\lib\x-axios" />
       <recent name="D:\charlie\utils\test" />
-      <recent name="D:\charlie\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\utils\charlie-utils\md" />
       <recent name="E:\utils\charlie-utils\lib" />
-      <recent name="D:\charlie\utils" />
-      <recent name="D:\charlie\utils\test" />
-      <recent name="D:\charlie\utils\lib" />
+      <recent name="E:\utils\charlie-utils\x" />
+      <recent name="E:\utils\charlie-utils" />
+      <recent name="E:\utils\charlie-utils\output" />
+      <recent name="E:\utils\charlie-utils\app唤起" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build-rollup">
-    <configuration name="ErrorMonitor.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/ErrorMonitor.js" working-dir="$PROJECT_DIR$/test">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
     <configuration name="crypto.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/crypto.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
-    <configuration name="data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/tree/data.js" working-dir="$PROJECT_DIR$/test/tree">
+    <configuration name="promise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/promise.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
     <configuration name="build-publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -156,10 +176,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build-rollup" />
-        <item itemvalue="Node.js.crypto.js" />
-        <item itemvalue="Node.js.ErrorMonitor.js" />
         <item itemvalue="npm.build-publish" />
-        <item itemvalue="Node.js.data.js" />
+        <item itemvalue="Node.js.promise.js" />
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.crypto.js" />
       </list>
     </recent_temporary>
   </component>
@@ -385,6 +405,54 @@
       <workItem from="1701427997998" duration="1782000" />
       <workItem from="1701609712018" duration="3804000" />
       <workItem from="1701650857365" duration="4353000" />
+      <workItem from="1701657575677" duration="1949000" />
+      <workItem from="1701738122375" duration="1591000" />
+      <workItem from="1701742724633" duration="365000" />
+      <workItem from="1701743277052" duration="19000" />
+      <workItem from="1701755692596" duration="2903000" />
+      <workItem from="1701941468786" duration="2031000" />
+      <workItem from="1702046793754" duration="616000" />
+      <workItem from="1702226783794" duration="3007000" />
+      <workItem from="1702354654846" duration="605000" />
+      <workItem from="1702516714260" duration="973000" />
+      <workItem from="1702541024297" duration="722000" />
+      <workItem from="1702623636165" duration="1325000" />
+      <workItem from="1702836373388" duration="12133000" />
+      <workItem from="1702874485493" duration="1198000" />
+      <workItem from="1703120980596" duration="682000" />
+      <workItem from="1703553379701" duration="346000" />
+      <workItem from="1703578868575" duration="1568000" />
+      <workItem from="1703655432104" duration="722000" />
+      <workItem from="1703733298989" duration="5838000" />
+      <workItem from="1703825127546" duration="2078000" />
+      <workItem from="1704243063011" duration="2049000" />
+      <workItem from="1704333356728" duration="2431000" />
+      <workItem from="1704357994107" duration="586000" />
+      <workItem from="1704374759375" duration="706000" />
+      <workItem from="1704391101627" duration="2579000" />
+      <workItem from="1704692393178" duration="1789000" />
+      <workItem from="1704707862331" duration="714000" />
+      <workItem from="1704709541034" duration="1177000" />
+      <workItem from="1704780060463" duration="4451000" />
+      <workItem from="1704943146254" duration="636000" />
+      <workItem from="1705024759940" duration="1000" />
+      <workItem from="1705029771534" duration="1808000" />
+      <workItem from="1705400646933" duration="37000" />
+      <workItem from="1705409374253" duration="5627000" />
+      <workItem from="1705453603980" duration="113000" />
+      <workItem from="1705455941227" duration="8251000" />
+      <workItem from="1705482489867" duration="1876000" />
+      <workItem from="1706019457301" duration="2209000" />
+      <workItem from="1706147402420" duration="819000" />
+      <workItem from="1706343051169" duration="3229000" />
+      <workItem from="1706493426432" duration="592000" />
+      <workItem from="1706582775963" duration="12098000" />
+      <workItem from="1706690204861" duration="991000" />
+      <workItem from="1706693401996" duration="653000" />
+      <workItem from="1706751522838" duration="599000" />
+      <workItem from="1706861451583" duration="27738000" />
+      <workItem from="1707096092905" duration="749000" />
+      <workItem from="1707182357154" duration="119000" />
     </task>
     <servers />
   </component>

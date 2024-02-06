@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   parserOptions: {
     parser: 'babel-eslint',
+    ecmaVersion: 2021,
     sourceType: 'module'
   },
   env: {
@@ -9,7 +10,6 @@ module.exports = {
     node: true,
     es6: true
   },
-  // it is base on https://github.com/vuejs/eslint-config-vue
   rules: {
     'accessor-pairs': 2,
     'arrow-spacing': [2, {
