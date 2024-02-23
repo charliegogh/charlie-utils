@@ -23,43 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/多维excel处理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/app唤起/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/qrcode.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/vconsole.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/x-axios/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/x-axios/x-axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/axios/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/axios/js-cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/axios/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/monitor/error-monitor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/monitor/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/anonymization.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/crypto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/string.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/x-axios/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/x-axios/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/x-axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/x-axios/js-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/x-axios/refreshToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/refreshToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/openApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/moment.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/moment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ErrorMonitor.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ErrorMonitor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/download.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-openApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-openApp.js.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +88,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/output/x-axios&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -129,15 +103,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\utils\charlie-utils\output\x-axios" />
       <recent name="E:\utils\charlie-utils\test" />
+      <recent name="E:\utils\charlie-utils\x\monitor" />
+      <recent name="E:\utils\charlie-utils\xMonitor" />
+      <recent name="E:\utils\charlie-utils\output\x-axios" />
       <recent name="E:\utils\charlie-utils\lib" />
-      <recent name="E:\utils\charlie-utils\lib\x-axios" />
-      <recent name="D:\charlie\utils\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\x" />
+      <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils" />
       <recent name="E:\utils\charlie-utils\output" />
       <recent name="E:\utils\charlie-utils\app唤起" />
@@ -453,6 +427,11 @@
       <workItem from="1706861451583" duration="27738000" />
       <workItem from="1707096092905" duration="749000" />
       <workItem from="1707182357154" duration="119000" />
+      <workItem from="1708317728575" duration="8713000" />
+      <workItem from="1708506162455" duration="4036000" />
+      <workItem from="1708586051008" duration="202000" />
+      <workItem from="1708653124296" duration="1498000" />
+      <workItem from="1708656593937" duration="1058000" />
     </task>
     <servers />
   </component>

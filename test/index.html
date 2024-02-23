@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<a href="https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc">应用宝，需要扫码弹起</a>
-<hr>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $.ajax({
+        url: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js',
+        type: 'GET',
+        async: false,
+        success: function(data) {
+            console.log(1)
+        },
+        error: function(xhr, status, error) {
+        }
+    });
+    $.ajax({
+        url: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js',
+        type: 'GET',
+        async: false,
+        success: function(data) {
+            console.log(1)
+        },
+        error: function(xhr, status, error) {
+            // 当请求失败时执行的回调函数
+            console.error(status + ': ' + error);
+        }
+    });
+</script>
 </html>

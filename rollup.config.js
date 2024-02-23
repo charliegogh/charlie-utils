@@ -5,11 +5,11 @@ import { babel } from '@rollup/plugin-babel' // 兼容性转换
 import alias from '@rollup/plugin-alias'
 import gzipPlugin from 'rollup-plugin-gzip'
 const json = require('rollup-plugin-json') // import 支持
-import { eslint } from 'rollup-plugin-eslint'
+// import { eslint } from 'rollup-plugin-eslint'
 export default {
-  input: './x/axios',
+  input: './x/monitor/error-monitor.js',
   output: {
-    file: 'output/x-axios/x-axios.js',
+    file: 'test/error-monitor.js',
     format: 'umd',
     name: '$$',
     exports: 'named'
@@ -30,8 +30,8 @@ export default {
       ]
     }),
     terser(),
-    gzipPlugin(),
-    eslint()
+    gzipPlugin()
+    // eslint()
   ],
   external: ['moment']
 }
