@@ -1,31 +1,44 @@
+
 class ErrorMonitor {
   constructor() {
     this.errorContainer = null
     this.errorMessages = []
+    this.whitelist = ['sensors']
     this.init()
   }
 
   init() {
     const isIE = /Trident|MSIE/.test(navigator.userAgent)
-    if (!isIE) {
-      window.onerror = (message, source, lineno, colno, error) => {
-        const data = {
-          message,
-          source,
-          lineno,
-          colno,
-          error
-        }
-        if (source.includes('sensors.min') || source === '') {
-          return false
-        }
-        if (!document.querySelector('#x-header-container')) {
-          this.errorMessages.push(data)
-          this.updateErrorContainer()
-        }
+    if (isIE) {
+      return
+    }
+    // 监听全局错误事件
+    window.onerror = (message, source, lineno, colno, error) => {
+      const data = {
+        message,
+        source,
+        lineno,
+        colno,
+        error
+      }
+      // 如果错误来源在白名单中，则忽略
+      if (this.whitelist.some(i => source.includes(i))) {
+        return
+      }
+      if (!document.querySelector('#x-header-container')) {
+        this.reportError(error)
+        this.errorMessages.push(data)
+        this.updateErrorContainer()
       }
     }
+    // 监听未捕获的 Promise 异常
+    window.addEventListener('unhandledrejection', (event) => {
+    })
   }
+  reportError(error) {
+    console.error('Error reported:', error)
+  }
+
   createErrorContainer() {
     const errorContainer = document.createElement('div')
     errorContainer.classList.add('x-error-container')
@@ -40,6 +53,7 @@ class ErrorMonitor {
       this.errorContainer = this.createErrorContainer()
     }
     this.errorContainer.innerHTML = ''
+
     const reloadContainer = document.createElement('p')
     reloadContainer.classList.add('x-error-container__reload')
     reloadContainer.innerHTML = '抱歉，阅读内容未能正常加载，请点击 <a href="javascript:;" id="reloadAction" style="color: red">【刷新页面】</a> 重试。'
@@ -53,13 +67,16 @@ class ErrorMonitor {
       errorMessage.appendChild(sourceElement)
       this.errorContainer.appendChild(errorMessage)
     })
-
-    if (!document.querySelector('.x-error-container')) {
+    if (!document.contains(this.errorContainer)) {
       document.body.appendChild(this.errorContainer)
     }
-    document.querySelector('#reloadAction')?.addEventListener('click', () => {
-      this.refreshPageWithParam()
-    })
+
+    const reloadAction = document.querySelector('#reloadAction')
+    if (reloadAction) {
+      reloadAction.addEventListener('click', () => {
+        this.refreshPageWithParam()
+      })
+    }
   }
   refreshPageWithParam() {
     const url = new URL(window.location.href)

@@ -23,17 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/monitor/error-monitor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/monitor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/monitor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/monitor/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/monitor/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/monitor/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ErrorMonitor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/download.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-openApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-openApp.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/monitor/error-monitor.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/monitor/error-monitor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/monitor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/monitor/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/cnki-la/mobile&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -117,11 +115,11 @@
       <recent name="E:\utils\charlie-utils\app唤起" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build-rollup">
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
+  <component name="RunManager" selected="Node.js.app.js (1)">
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/x/monitor/app.js" working-dir="$PROJECT_DIR$/x/monitor">
       <method v="2" />
     </configuration>
-    <configuration name="crypto.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/crypto.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
     <configuration name="promise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/promise.js" working-dir="$PROJECT_DIR$/test">
@@ -149,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="npm.build-rollup" />
         <item itemvalue="npm.build-publish" />
         <item itemvalue="Node.js.promise.js" />
         <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.crypto.js" />
       </list>
     </recent_temporary>
   </component>
@@ -432,6 +430,8 @@
       <workItem from="1708586051008" duration="202000" />
       <workItem from="1708653124296" duration="1498000" />
       <workItem from="1708656593937" duration="1058000" />
+      <workItem from="1708943827673" duration="1768000" />
+      <workItem from="1708947778450" duration="1513000" />
     </task>
     <servers />
   </component>
