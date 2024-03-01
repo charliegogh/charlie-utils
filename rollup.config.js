@@ -7,12 +7,12 @@ import gzipPlugin from 'rollup-plugin-gzip'
 const json = require('rollup-plugin-json') // import 支持
 // import { eslint } from 'rollup-plugin-eslint'
 export default {
-  input: './x/monitor/error-monitor.js',
+  // input: './x/openApp/index.js',
+  input: './x/Screenshot/app.js',
   output: {
-    file: 'test/error-monitor.js',
+    file: 'test/screenshot.js',
     format: 'umd',
-    name: '$$',
-    exports: 'named'
+    name: '_'
   },
   plugins: [
     json(),

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,30 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="js-toolbar" style="display: none">tool</div>
+<div class="content"></div>
+<button id="openAppButton">吊起app</button>
 </body>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./vconsole.min.js"></script>
+
+<!--<script src="./x-sdk.js" defer></script>-->
 <script>
-    $.ajax({
-        url: 'https://cdn.bootcdn.net/11ajax/libs/jquery/3.7.1/jquery.min.js',
-        type: 'GET',
-        async: true,
-        success: function(data) {
-            console.log(1)
-        },
-        error: function(xhr, status, error) {
-        }
+    new VConsole()
+    console.log(1)
+    document.querySelector('.content').innerText+='设备标识：'+navigator.userAgent
+    document.querySelector('.content').innerText+='\n设备宽度：'+window.screen.width
+    document.querySelector('.content').innerText+='\n设备可见部分宽度：'+window.innerWidth
+    document.querySelector('.content').innerText+='\n设备高度度：'+window.screen.height
+    document.querySelector('.content').innerText+='\n侦测屏幕方向：'+window.orientation
+    const getDocument = elm => (elm || {}).ownerDocument || document
+    const getWindow = elm => (getDocument(elm) || {}).defaultView || window
+    document.addEventListener('mousedown', function() {
+        // const selection = getWindow(document.querySelector('body')).getSelection()
+        // console.log(selection.getRangeAt(0),'mousedown')
     });
-    $.ajax({
-        url: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js',
-        type: 'GET',
-        async: false,
-        success: function(data) {
-            console.log(222)
-        },
-        error: function(xhr, status, error) {
-            // 当请求失败时执行的回调函数
-            console.error(status + ': ' + error);
-        }
-    });
+    // document.addEventListener('selectionchange', function() {
+    //     const sel = window.getSelection()
+    //     const range = sel.getRangeAt && sel.getRangeAt(0)
+    //     console.log(range)
+    //     const boundingClientRect = range.getBoundingClientRect()
+    //     console.log(boundingClientRect)
+    //
+    //     console.log(range.commonAncestorContainer,'~~~~~~~~~')
+    // });
+    // let longPressTimer
+    // document.addEventListener('touchstart', event => {
+    //     clearTimeout(longPressTimer)
+    //     longPressTimer = setTimeout(function () {
+    //         console.log('end of long press')
+    //         console.log(event)
+    //
+    //     }, 500)
+    // })
+    // document.addEventListener('touchmove', function (event) {
+    //     clearTimeout(longPressTimer)
+    // })
+    document.addEventListener('touchend', function (event) {
+        const range = window.getSelection()?.getRangeAt(0)
+        console.log(range.startOffset)
+        console.log(range.startContainer)
+    })
 </script>
 </html>

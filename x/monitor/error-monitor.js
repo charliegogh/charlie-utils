@@ -1,3 +1,13 @@
+const getDate = () => {
+  const currentDate = new Date()
+  const year = currentDate.getFullYear()
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, '0')
+  const day = currentDate.getDate().toString().padStart(2, '0')
+  const hours = currentDate.getHours().toString().padStart(2, '0')
+  const minutes = currentDate.getMinutes().toString().padStart(2, '0')
+  const seconds = currentDate.getSeconds().toString().padStart(2, '0')
+  return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds
+}
 
 class ErrorMonitor {
   constructor() {
@@ -12,31 +22,71 @@ class ErrorMonitor {
     if (isIE) {
       return
     }
-    // 监听全局错误事件
+    /**
+     * 监听全局错误事件
+     * 弊端：重复声明会被替换，后续赋值会覆盖之前的值
+     * @param message 错误信息
+     * @param source 错误来源
+     * @param lineno 出错行号
+     * @param colno 出错列号
+     * @param error 错误对象本身
+     */
     window.onerror = (message, source, lineno, colno, error) => {
       const data = {
-        message,
+        message: '代码出错：' + message,
         source,
         lineno,
         colno,
         error
       }
       // 如果错误来源在白名单中，则忽略
-      if (this.whitelist.some(i => source.includes(i))) {
-        return
-      }
+      // if (this.whitelist.some(i => source.includes(i))) {
+      //   return
+      // }
       if (!document.querySelector('#x-header-container')) {
-        this.reportError(error)
+        this.reportError(data)
         this.errorMessages.push(data)
         this.updateErrorContainer()
       }
     }
-    // 监听未捕获的 Promise 异常
+    /**
+     * 网络资源加载错误处理
+     */
+    window.addEventListener('error', error => {
+      if (!error.message) {
+        const data = {
+          message: '资源加载失败',
+          source: error.target.src
+        }
+        this.reportError(data)
+        this.errorMessages.push(data)
+        this.updateErrorContainer()
+      }
+    }, true)
+
+    /**
+     * 监听未捕获的 Promise 异常
+     */
     window.addEventListener('unhandledrejection', (event) => {
+      event.preventDefault()
+      const reason = event.reason
+      const data = {
+        message: 'Promise 异步错误：' + reason.message,
+        source: reason.stack
+      }
+      this.reportError(data)
+      this.errorMessages.push(data)
+      this.updateErrorContainer()
+      return true
     })
   }
   reportError(error) {
-    console.error('Error reported:', error)
+    console.error('Error reported:', {
+      ...error,
+      date: getDate(),
+      // 用户ip
+      ip: ''
+    })
   }
 
   createErrorContainer() {
@@ -61,7 +111,7 @@ class ErrorMonitor {
 
     this.errorMessages.forEach(error => {
       const sourceElement = document.createElement('div')
-      sourceElement.classList.add('source-element')
+      sourceElement.classList.add('xerror-source__element')
       sourceElement.innerHTML = `<p>Error source: ${error.source}</p><p>Error message: ${error.message}</p>`
       const errorMessage = document.createElement('div')
       errorMessage.appendChild(sourceElement)

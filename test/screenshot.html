@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<button onclick="startSelection()">开始框选</button>
+<p style="color: red">
+   测试哈哈哈
+</p>
+</body>
+<script src="./screenshot.js"></script>
+<script>
+    function startSelection(){
+        const screenshot = new _.Screenshot();
+        screenshot.startSelection(rs=>{
+            fetch('http://10.120.151.2//OCRAPI/api/OCR/GetSMYOCRJson',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "base64str": rs,
+                    "filename": "1.png",
+                    "in_UserName": "cnki",
+                    "in_PassWord": "6c4VwQ2kYu8Lg",
+                    "opertype": "8"
+                })
+            }).then(response =>{
+                return response.json()
+            }).then(data=>{
+                console.log(data)
+            })
+        });
+    }
+</script>
+</html>
