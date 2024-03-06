@@ -23,28 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/screenshot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vconsole.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/Screenshot/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/openApp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/openApp/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/pad/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/pad/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/pad/vconsole.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/excel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/sdk/styles.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/sdk/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/openApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/openApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/x-openApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/x-openApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/多维excel处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/excel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/qrcode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/vconsole.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/test/vconsole.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/x-openApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/x-openApp.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/x-axios/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/x-axios/x-axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/test/x-axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/x-axios/x-axios.js.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/monitor/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/monitor/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/monitor/error-monitor.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/monitor/error-monitor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/screenshot.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/screenshot/screenshot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/screenshot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/screenshot.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-s.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-s.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-sdk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/x-sdk.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/Screenshot/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/screenshot/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/openApp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/openApp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/pad/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/pad/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/pad/vconsole.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +109,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/openApp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/sdk&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -107,25 +117,25 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\WebStorm 2023.1.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\x\sdk" />
       <recent name="E:\utils\charlie-utils\x\openApp" />
-      <recent name="E:\utils\charlie-utils\x\pad" />
-      <recent name="E:\utils\charlie-utils\test" />
-      <recent name="E:\utils\charlie-utils\x\monitor" />
-      <recent name="E:\utils\charlie-utils\xMonitor" />
+      <recent name="E:\utils\charlie-utils\x\touch" />
+      <recent name="E:\utils\charlie-utils\x\axios" />
+      <recent name="E:\utils\charlie-utils\x\Screenshot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\utils\charlie-utils\x" />
-      <recent name="E:\utils\charlie-utils\lib" />
-      <recent name="E:\utils\charlie-utils" />
-      <recent name="E:\utils\charlie-utils\output" />
-      <recent name="E:\utils\charlie-utils\app唤起" />
+      <recent name="E:\utils\charlie-utils\x\sdk\test" />
+      <recent name="E:\utils\charlie-utils\x\sdk" />
+      <recent name="E:\utils\charlie-utils\x\openApp\test" />
+      <recent name="E:\utils\charlie-utils\x\axios\test" />
+      <recent name="E:\utils\charlie-utils\x\excel" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build-rollup">
@@ -450,7 +460,8 @@
       <workItem from="1709203332963" duration="18430000" />
       <workItem from="1709257627441" duration="3134000" />
       <workItem from="1709267492368" duration="2999000" />
-      <workItem from="1709271012986" duration="5641000" />
+      <workItem from="1709271012986" duration="31309000" />
+      <workItem from="1709643403787" duration="71000" />
     </task>
     <servers />
   </component>

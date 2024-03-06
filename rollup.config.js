@@ -5,14 +5,15 @@ import { babel } from '@rollup/plugin-babel' // 兼容性转换
 import alias from '@rollup/plugin-alias'
 import gzipPlugin from 'rollup-plugin-gzip'
 const json = require('rollup-plugin-json') // import 支持
+import less from 'rollup-plugin-less'
 // import { eslint } from 'rollup-plugin-eslint'
 export default {
-  // input: './x/openApp/index.js',
-  input: './x/Screenshot/app.js',
+  input: './x/sdk/app.js',
+  // input: './x/Screenshot/app.js',
   output: {
-    file: 'test/screenshot.js',
+    file: 'x/sdk/test/x-sdk.js',
     format: 'umd',
-    name: '_'
+    name: 'xsdk'
   },
   plugins: [
     json(),
@@ -30,7 +31,8 @@ export default {
       ]
     }),
     terser(),
-    gzipPlugin()
+    gzipPlugin(),
+    less({ insert: true })
     // eslint()
   ],
   external: ['moment']
