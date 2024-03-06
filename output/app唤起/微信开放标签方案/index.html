@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<wx-open-launch-app class="wx2app-btn"
+                    appid="wx86fb62b7b6e1dea7">
+    <script type="text/wxtag-template">
+        <p class="download btn">收藏全文</p>
+    </script>
+</wx-open-launch-app>
+<button id="share">分享</button>
+<div id="qrcode"></div>
+</body>
+
+<script src="./vconsole.min.js"></script>
+<script src="./x-openApp.js"></script>
+<script src="./qrcode.min.js"></script>
+<script>
+    var data = "https://x.cnki.net/web/test/";
+
+    // 创建 QRCode 实例
+    new QRCode(document.getElementById("qrcode"), {
+        text: data,
+        width: 128,
+        height: 128,
+    });
+
+    const setToken = (name, value, seconds) => {
+        let expires = ''
+        if (seconds !== 0) {
+            const date = new Date()
+            date.setTime(date.getTime() + seconds * 1000)
+            expires = `; expires=${date.toGMTString()}`
+        }
+        document.cookie = `${name}=${escape(value)}${expires}; path=/; domain=`
+    }
+
+    setToken('SID_web','018070')
+
+    new VConsole()
+
+    xSdk.openApp({
+        debug: false,
+        success:(e)=>{
+            console.log('success')
+        },
+        error: (e) => {
+            console.log(e)
+        }
+    })
+
+    document.querySelector('#share').addEventListener('click',()=>{
+        xJdk.shareWx()
+    })
+</script>
+</html>
