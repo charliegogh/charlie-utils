@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<wx-open-launch-app class="wx2app-btn"
+                    appid="wx86fb62b7b6e1dea7">
+    <script type="text/wxtag-template">
+        <p>吊起app</p>
+    </script>
+</wx-open-launch-app>
+</body>
+<script src="./x-sdk.js"></script>
+<script src="./vconsole.min.js"></script>
+<script>
+    new VConsole()
+    console.log(xsdk,'sdk init')
+    xsdk.openApp({
+        debug: false,
+        success:(e)=>{
+            console.log('success')
+        },
+        error: (e) => {
+            console.log(e)
+        }
+    })
+</script>
+</html>

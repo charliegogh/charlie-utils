@@ -26,7 +26,7 @@ class Xsdk {
       const isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
       const isWx = ua.indexOf('MicroMessenger') > -1
       const isQQ = ua.indexOf('QQ') > -1
-      const isPad = screenWidth > 1200 < 500
+      const isPad = screenWidth >= 500 && screenWidth <= 1200
       if (isWx) {
         this.env = isAndroid ? 'Android_wx' : 'ios_wx'
       } else
@@ -40,6 +40,7 @@ class Xsdk {
         }
       }
     }
+    console.log(this.env, 'current env')
   }
 
   initWXJsdk() {
@@ -48,7 +49,7 @@ class Xsdk {
         .then((res) => res.json())
         .then((res) => {
           wx.config({
-            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            debug: this.options?.debug || false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
             appId: 'wx549fe1c34185bae9', // 必填，公众号的唯一标识
             timestamp: res.Data.Result.timeStamp, // 必填，生成签名的时间戳
             nonceStr: res.Data.Result.noncestr, // 必填，生成签名的随机串
@@ -71,6 +72,7 @@ class Xsdk {
 
   launchCb(e) {
     console.log('success', e, e.detail, JSON.stringify(e.detail))
+    this.options.success('success')
   }
 
   errorCb(e) {
@@ -134,18 +136,19 @@ class Xsdk {
   readTest() {
     let longPressTimer
     const that = this
-    document.querySelector('.ChapterContainerWrap')
-      .addEventListener('touchstart', function(event) {
-        clearTimeout(longPressTimer)
-        longPressTimer = setTimeout(function() {
-          const targetEl = document.querySelector('.js-toolbar')
-          const computedStyle = window.getComputedStyle(targetEl)
-          if (computedStyle && computedStyle.display !== 'none') {
-          } else {
-            that.openApp({ target: 'read' })
-          }
-        }, 500)
-      })
+    const el = document.querySelector('.ChapterContainerWrap')
+    if (!el) return
+    el.addEventListener('touchstart', function(event) {
+      clearTimeout(longPressTimer)
+      longPressTimer = setTimeout(function() {
+        const targetEl = document.querySelector('.js-toolbar')
+        const computedStyle = window.getComputedStyle(targetEl)
+        if (computedStyle && computedStyle.display !== 'none') {
+        } else {
+          that.openApp({ target: 'read' })
+        }
+      }, 500)
+    })
     document.addEventListener('touchmove', function(event) {
       clearTimeout(longPressTimer)
     })
