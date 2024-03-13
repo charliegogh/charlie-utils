@@ -82,6 +82,7 @@ class Xsdk {
   openApp(e) {
     const env = this.env
     this.options = e
+    // 微信
     if (env.includes('wx')) {
       return new Promise(() => {
         this.initWXJsdk()
@@ -95,27 +96,35 @@ class Xsdk {
           })
       })
     }
+    // qq
+    if (env.includes('qq')) {
+
+    }
+    // 浏览器
     if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios'].includes(env)) {
-      if (e.target === 'read') {
-        // 阅读跳转
-        let readParams = getURLParams()
-        if (Object.keys(readParams).length > 0) {
-          readParams = e.readParams ? { ...e.readParams, ...readParams } : readParams
-          const href = 'psmc://' + window.location.host + '/read' + setURLParams('', readParams)
-          window.location.href = href
-        }
-        setTimeout(() => {
-          if (['Android_pad', 'pad', 'Android'].includes(env)) {
-            window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
-          }
-          // 此处ios pad 如何判定
-          if (['ios_pad', 'ios'].includes(env)) {
-            window.location.href = 'https://itunes.apple.com/cn/app/apple-store/id1459607218'
-          }
-        }, 5000)
-      }
+      this.target(this.options, env)
     }
   }
+  target(e, env) {
+    if (e.target === 'read') {
+      // 阅读跳转
+      let readParams = getURLParams()
+      if (Object.keys(readParams).length > 0) {
+        readParams = e.readParams ? { ...e.readParams, ...readParams } : readParams
+        const href = 'psmc://' + window.location.host + '/read' + setURLParams('', readParams)
+        window.location.href = href
+      }
+      setTimeout(() => {
+        if (['Android_pad', 'pad', 'Android'].includes(env)) {
+          window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
+        }
+        if (['ios_pad', 'ios'].includes(env)) {
+          window.location.href = 'https://itunes.apple.com/cn/app/apple-store/id1459607218'
+        }
+      }, 5000)
+    }
+  }
+
   shareWx() {
     return new Promise(resolve => {
       this.initWXJsdk().then(() => {
