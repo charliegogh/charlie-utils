@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .x-openApp span{
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
-<wx-open-launch-app class="wx2app-btn"
-                    appid="wx86fb62b7b6e1dea7">
-    <script type="text/wxtag-template">
-        <p>吊起app</p>
-    </script>
-</wx-open-launch-app>
+
+<div class="x-openApp">
+    <span class="x-openApp__action">吊起app</span>
+    <wx-open-launch-app class="wx2app-btn"
+                        appid="wx86fb62b7b6e1dea7">
+        <script type="text/wxtag-template">
+            <span class="x-openApp__action x-openApp__action--wx">吊起app</span>
+        </script>
+    </wx-open-launch-app>
+</div>
 </body>
 <script src="./x-sdk.js"></script>
 <script src="./vconsole.min.js"></script>
 <script>
     new VConsole()
-    console.log(xsdk,'sdk init')
     xsdk.openApp({
         debug: false,
+        target:'read',
+        // 额外携带参数
+        params:{
+
+        },
         success:(e)=>{
             console.log('success')
         },

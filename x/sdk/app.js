@@ -97,32 +97,43 @@ class Xsdk {
       })
     }
     // qq
-    if (env.includes('qq')) {
-
-    }
+    // if (env.includes('qq')) {
+    //
+    // }
     // 浏览器
-    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios'].includes(env)) {
-      this.target(this.options, env)
+    console.log(env)
+    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios', 'PC'].includes(env)) {
+      const el = document.getElementsByClassName('x-openApp')
+      if (el.length === 0) return
+      for (let j = 0; j < el.length; j++) {
+        el[j].addEventListener('click', () => {
+          console.log('点击事件')
+          this.target(e, env)
+        })
+      }
     }
   }
   target(e, env) {
-    if (e.target === 'read') {
-      // 阅读跳转
-      let readParams = getURLParams()
-      if (Object.keys(readParams).length > 0) {
-        readParams = e.readParams ? { ...e.readParams, ...readParams } : readParams
-        const href = 'psmc://' + window.location.host + '/read' + setURLParams('', readParams)
-        window.location.href = href
-      }
-      setTimeout(() => {
+    const appScheme = 'psmc://'
+    const appOpenTimeout = 3000
+    const startTime = Date.now()
+    let urlParams = getURLParams()
+    urlParams = e.params ? { ...e.params, ...urlParams } : urlParams
+    const targetSrc = window.location.host + '/' + e.target + setURLParams('', urlParams)
+    window.location.href = appScheme + targetSrc
+    const checkAppOpenInterval = setInterval(function() {
+      const currentTime = Date.now()
+      if ((currentTime - startTime) > appOpenTimeout) {
+        clearInterval(checkAppOpenInterval)
         if (['Android_pad', 'pad', 'Android'].includes(env)) {
           window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
         }
         if (['ios_pad', 'ios'].includes(env)) {
           window.location.href = 'https://itunes.apple.com/cn/app/apple-store/id1459607218'
         }
-      }, 5000)
-    }
+      } else {
+      }
+    }, 1000)
   }
 
   shareWx() {

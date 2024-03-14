@@ -27,10 +27,24 @@
 </wx-open-launch-app>
 ```
 
+- 浏览器内打开
+
+```html
+<div class="x-openApp">
+    吊起app
+</div>
+```
+
 - 使用 sdk 回调
 ```javascript
    xsdk.openApp({
         debug: false,
+        // app 应用
+        target:'read',
+        // 额外携带参数
+        params:{
+            
+        },
         success:(e)=>{
             console.log('success')
         },
