@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .x-openApp span{
-            position: absolute;
-        }
-    </style>
 </head>
 <body>
-
 <div class="x-openApp">
-    <span class="x-openApp__action">吊起app</span>
-    <wx-open-launch-app class="wx2app-btn"
-                        appid="wx86fb62b7b6e1dea7">
-        <script type="text/wxtag-template">
-            <span class="x-openApp__action x-openApp__action--wx">吊起app</span>
-        </script>
-    </wx-open-launch-app>
+    吊起app
 </div>
+
+
+<!--<div class="x-shareWx">-->
+<!--    分享-->
+<!--</div>-->
 </body>
 <script src="./x-sdk.js"></script>
 <script src="./vconsole.min.js"></script>
@@ -28,17 +21,37 @@
     new VConsole()
     xsdk.openApp({
         debug: false,
-        target:'read',
-        // 额外携带参数
-        params:{
-
+        extinfo: {
+            action:'readService',
+            actionUrl:'https://x.cnki.net/activity/signIn.html'
+        }, // 微信开放标签参数，默认：{ action: 'readService', actionUrl: window.location.
+        params: {}, // 打开应用时额外携带的参数
+        success: (e) => {
+            console.log('成功')
         },
-        success:(e)=>{
-            console.log('success')
-        },
+        // 失败回调
         error: (e) => {
+            if (e === 'fail') {
+                // 处理失败情况
+            }
+        },
+        env_pc: (e) => {
             console.log(e)
         }
     })
+
+    // document.querySelector('.x-shareWx').addEventListener('click', () =>{
+    //     console.log('微信分享测试')
+    //     xsdk.shareWx({
+    //         title: '研学微信分享测试',
+    //         desc: '研学微信分享测试',
+    //         link: 'https://x.cnki.net/web/test',
+    //         imgUrl: 'https://x.cnki.net/web/test/logo.jpg',
+    //         success: (res) =>{
+    //             console.log(res)
+    //         }
+    //     })
+    // })
+
 </script>
 </html>

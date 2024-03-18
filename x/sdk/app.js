@@ -1,8 +1,11 @@
 import wx from 'weixin-js-sdk'
 import { getURLParams, setURLParams } from '../../lib/_'
+import './styles.css'
 class Xsdk {
   constructor() {
-    this.options = {}
+    this.options = {
+      target: 'read'
+    }
     this.env = ''
     this.openApp = this.openApp.bind(this)
     this.shareWx = this.shareWx.bind(this)
@@ -76,50 +79,69 @@ class Xsdk {
   }
 
   errorCb(e) {
+    console.log('open failed')
     this.options.error('fail')
   }
 
-  openApp(e) {
-    const env = this.env
+  async openApp(e) {
     this.options = e
-    // 微信
-    if (env.includes('wx')) {
-      return new Promise(() => {
-        this.initWXJsdk()
-          .then(() => {
-            const btns = document.getElementsByClassName('wx2app-btn')
-            if (btns.length === 0) return
-            for (var j = 0; j < btns.length; j++) {
-              btns[j].addEventListener('launch', this.launchCb)
-              btns[j].addEventListener('error', this.errorCb)
-            }
-          })
-      })
+    const env = this.env
+    const el = document.getElementsByClassName('x-openApp')
+    if (el.length === 0) return
+
+    let urlParams = getURLParams()
+    urlParams = this.options.params ? { ...this.options.params, ...urlParams } : urlParams
+
+    const extinfo = JSON.stringify(e.extinfo || { action: 'readService', actionUrl: window.location.href })
+    if (env.includes('qq')) {
+      this.options.error('fail')
     }
-    // qq
-    // if (env.includes('qq')) {
-    //
-    // }
-    // 浏览器
-    console.log(env)
-    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios', 'PC'].includes(env)) {
-      const el = document.getElementsByClassName('x-openApp')
-      if (el.length === 0) return
+    if (env.includes('wx')) {
+      await this.initWXJsdk()
+      for (let j = 0; j < el.length; j++) {
+        if (env.includes('wx')) {
+          const html = `
+           <wx-open-launch-app class="wx2app-btn"
+                          appid="wx86fb62b7b6e1dea7"
+                          extinfo=${extinfo}
+                            style="position:absolute;top:0;left:0;right: 0;bottom:0"
+                          >
+          <script type="text/wxtag-template">
+              <span style="position: absolute;left: 0;right: 0;bottom: 0;opacity: 0">open app</span>
+          </script>
+      </wx-open-launch-app>
+      `
+          el[j].innerHTML += html
+        }
+      }
+      const btns = document.getElementsByClassName('wx2app-btn')
+      if (btns.length === 0) return
+      for (var j = 0; j < btns.length; j++) {
+        btns[j].addEventListener('launch', this.launchCb)
+        btns[j].addEventListener('error', this.errorCb)
+      }
+    }
+    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios'].includes(env)) {
       for (let j = 0; j < el.length; j++) {
         el[j].addEventListener('click', () => {
-          console.log('点击事件')
-          this.target(e, env)
+          this.targetApp(urlParams)
         })
       }
     }
+    if (['PC'].includes(env)) {
+      this.options.env_pc(
+        {
+          url: setURLParams(window.location.origin, urlParams)
+        }
+      )
+    }
   }
-  target(e, env) {
+  targetApp(urlParams) {
+    const env = this.env
     const appScheme = 'psmc://'
     const appOpenTimeout = 3000
     const startTime = Date.now()
-    let urlParams = getURLParams()
-    urlParams = e.params ? { ...e.params, ...urlParams } : urlParams
-    const targetSrc = window.location.host + '/' + e.target + setURLParams('', urlParams)
+    const targetSrc = window.location.host + '/' + this.options.target + setURLParams('', urlParams)
     window.location.href = appScheme + targetSrc
     const checkAppOpenInterval = setInterval(function() {
       const currentTime = Date.now()
@@ -135,17 +157,22 @@ class Xsdk {
       }
     }, 1000)
   }
-
-  shareWx() {
+  shareWx(e) {
+    const params = {
+      title: '研学微信分享测试',
+      desc: '研学微信分享测试',
+      link: 'https://x.cnki.net/web/test',
+      imgUrl: 'https://x.cnki.net/web/test/logo.jpg',
+      ...e
+    }
+    const cb = e.success
     return new Promise(resolve => {
       this.initWXJsdk().then(() => {
         wx.updateAppMessageShareData({
-          title: '测试微信分享',
-          desc: '123333333333333333333333',
-          link: 'https://x.cnki.net/web/test',
-          imgUrl: 'https://x.cnki.net/web/test/logo.jpg',
+          ...params,
           success: function(res) {
             resolve(res)
+            cb && cb('success')
           }
         })
       })
@@ -165,7 +192,7 @@ class Xsdk {
         const computedStyle = window.getComputedStyle(targetEl)
         if (computedStyle && computedStyle.display !== 'none') {
         } else {
-          that.openApp({ target: 'read' })
+          that.targetApp()
         }
       }, 500)
     })

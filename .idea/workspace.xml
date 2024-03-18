@@ -23,11 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x/sdk/styles.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/sdk/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/sdk/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/sdk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/sdk/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/sdk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/styles.less" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js.gz" afterDir="false" />
     </list>
@@ -83,7 +88,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;x-sdk&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/sdk&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -117,7 +122,7 @@
     <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/x/monitor/app.js" working-dir="$PROJECT_DIR$/x/monitor">
       <method v="2" />
     </configuration>
-    <configuration name="promise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/promise.js" working-dir="$PROJECT_DIR$/test">
+    <configuration name="test.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/x/sdk/test.js" working-dir="$PROJECT_DIR$/x/sdk">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
@@ -146,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build-rollup" />
+        <item itemvalue="Node.js.test.js (1)" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="npm.build-publish" />
-        <item itemvalue="Node.js.promise.js" />
       </list>
     </recent_temporary>
   </component>
@@ -439,6 +444,7 @@
       <workItem from="1710292091367" duration="114000" />
       <workItem from="1710292216207" duration="4247000" />
       <workItem from="1710382909152" duration="9624000" />
+      <workItem from="1710461249224" duration="9975000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve' // 允许加载第三方模块
 import { babel } from '@rollup/plugin-babel' // 兼容性转换
 import alias from '@rollup/plugin-alias'
 import gzipPlugin from 'rollup-plugin-gzip'
+import postcss from 'rollup-plugin-postcss'
 const json = require('rollup-plugin-json') // import 支持
 // import { eslint } from 'rollup-plugin-eslint'
 export default {
@@ -14,6 +15,10 @@ export default {
     name: 'xsdk'
   },
   plugins: [
+    postcss({
+      inject: true,
+      extract: false
+    }),
     json(),
     commonjs(),
     resolve({
@@ -30,6 +35,7 @@ export default {
     }),
     terser(),
     gzipPlugin()
+
     // eslint()
   ],
   external: ['moment']

@@ -1,66 +1,62 @@
-## 研学 sdk 工具集成使用
+## 研究与学习 SDK 工具集成使用指南
 
-### app 唤起
+### 环境检测
 
-#### 微信开放标签唤起
+- 个人电脑端 (PC)
+- 微信环境：Android 微信 (Android_wx)、iOS 微信 (iOS_wx)
+- QQ 环境：Android QQ (Android_qq)、iOS QQ (iOS_qq)
+- 平板设备：Android 平板 (Android_pad)、iOS 平板 (iOS_pad)、普通平板 (pad)
+- 普通移动设备：Android、iOS
 
-最新微信jsdk，微信针对链接直访应用，jsdk 功能做了限制，目前测试以下三种方式支持：
+### 应用唤起
 
-1. 公众号菜单访问后分享
-2. 生成二维码，识别二维码后分享
-3. 访问页面后添加到收藏，从微信收藏中进入后分享
+在进行应用唤起功能时，请注意以下限制与适配方案：
 
-##### 使用
+微信开放标签唤起功能受到一定限制。目前我们测试了以下三种方式支持：
 
-- 引入sdk包
+1. 通过公众号菜单进入应用后进行分享
+2. 生成二维码，用户扫描二维码后进行分享
+3. 用户访问页面后将应用添加到收藏夹，然后从微信收藏夹中进入应用后进行分享
+
+- SDK 内部已集成微信开放标签功能，但请注意处理回调函数返回的失败情况
+- 目前 QQ 暂不支持该功能，如遇到回调函数返回失败情况，请自行处理
+- app 应用内置浏览器完全支持上述功能
+
+#### 使用方法
+
+1. 引入 SDK 包
+
 ```html
 <script src="./x-sdk.js"></script>
 ```
 
-- 使用开放标签
-```html
-<wx-open-launch-app class="wx2app-btn"
-                    appid="wx86fb62b7b6e1dea7">
-    <script type="text/wxtag-template">
-        <p>吊起app</p>
-    </script>
-</wx-open-launch-app>
-```
-
-- 浏览器内打开
+2. 吊起容器，需指定特定的 class 名称
 
 ```html
 <div class="x-openApp">
-    吊起app
+    吊起应用
 </div>
 ```
 
-- 使用 sdk 回调
+3. 使用 SDK 回调函数
+
 ```javascript
-   xsdk.openApp({
-        debug: false,
-        // app 应用
-        target:'read',
-        // 额外携带参数
-        params:{
-            
-        },
-        success:(e)=>{
-            console.log('success')
-        },
-        error: (e) => {
-            console.log(e)
+xsdk.openApp({
+    debug: false,
+    extinfo: {}, // 微信开放标签参数，默认：{ action: 'readService', actionUrl: window.location.href }
+    params: {}, // 打开应用时额外携带的参数
+    success: (e) => {
+        console.log('成功')
+    },
+    // 失败回调
+    error: (e) => {
+        if (e === 'fail') {
+            // 处理失败情况
         }
-    })
+    },
+    env_pc: (e) => {
+        // pc 回调地址，返回拼接后参数
+    }
+})
 ```
 
-#### qq 内部唤起
-
-### 微信分享
-
-## env 判断
-
-- pc 
-- 微信：安卓、ios
-- qq：安卓、ios
-- pad：安卓 pad、ios pad、pad 
