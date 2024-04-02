@@ -28,25 +28,32 @@ class Xsdk {
       const isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Adr') > -1
       const isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
       const isWx = ua.indexOf('MicroMessenger') > -1
-      const isQQ = ua.indexOf('QQ') > -1
+      const isQQ = ua.indexOf('QQTheme') > -1
+      const isWeiBo = ua.toLocaleUpperCase().indexOf('weibo') !== -1
       const isPad = screenWidth >= 500 && screenWidth <= 1200
+      const isYanXueApp = ua.indexOf('psmc') !== -1
       if (isWx) {
         this.env = isAndroid ? 'Android_wx' : 'ios_wx'
       } else
       if (isQQ) {
         this.env = isAndroid ? 'Android_qq' : 'ios_qq'
+      } else
+      if (isWeiBo) {
+        this.env = isWeiBo ? 'Android_wb' : 'ios_wb'
+      } else if (isYanXueApp) {
+        this.env = isAndroid ? 'Android_yx' : 'ios_yx'
       } else {
         this.env = isAndroid ? (isPad ? 'Android_pad' : 'Android') : isIOS ? (isPad ? 'ios_pad' : 'ios') : 'pad'
-        // 进行阅读检测
         if (this.env.includes('pad')) {
           this.readTest()
         }
       }
     }
-    console.log(this.env, 'current env')
+    console.log('xsdk: current env' + this.env)
   }
 
   initWXJsdk() {
+    const that = this
     return new Promise((resolve, reject) => {
       fetch(`${location.origin}/Trilalread/Member/GetWeChatModel?url=${window.location.href}`)
         .then((res) => res.json())
@@ -65,6 +72,10 @@ class Xsdk {
           })
           wx.error(function(err) {
             if (err.errMsg != 'config:ok') {
+              that.options.error({
+                code: 40001,
+                msg: 'wx sdk config error'
+              })
               // vm.toAppBtnIsShow = false;
             }
             console.log('错误：', err, JSON.stringify(err))
@@ -78,9 +89,11 @@ class Xsdk {
     this.options.success('success')
   }
 
-  errorCb(e) {
-    console.log('open failed')
-    this.options.error('fail')
+  errorCb() {
+    this.options.error({
+      code: 40002,
+      msg: 'wx open app error'
+    })
   }
 
   async openApp(e) {
@@ -91,12 +104,8 @@ class Xsdk {
 
     let urlParams = getURLParams()
     urlParams = this.options.params ? { ...this.options.params, ...urlParams } : urlParams
-
-    const extinfo = JSON.stringify(e.extinfo || { action: 'readService', actionUrl: window.location.href })
-    if (env.includes('qq')) {
-      this.options.error('fail')
-    }
     if (env.includes('wx')) {
+      const extinfo = JSON.stringify(e.extinfo || { action: 'readService', actionUrl: window.location.href })
       await this.initWXJsdk()
       for (let j = 0; j < el.length; j++) {
         if (env.includes('wx')) {
@@ -104,10 +113,10 @@ class Xsdk {
            <wx-open-launch-app class="wx2app-btn"
                           appid="wx86fb62b7b6e1dea7"
                           extinfo=${extinfo}
-                            style="position:absolute;top:0;left:0;right: 0;bottom:0"
+                            style="position:absolute;top:0;left:0;right: 0;bottom:0;width: 100%;height: 100%;"
                           >
           <script type="text/wxtag-template">
-              <span style="position: absolute;left: 0;right: 0;bottom: 0;opacity: 0">open app</span>
+              <span style="width:100%;height:100%;display:inline-block;position: absolute;left: 0;right: 0;bottom: 0;opacity: 0;">open app</span>
           </script>
       </wx-open-launch-app>
       `
@@ -121,23 +130,29 @@ class Xsdk {
         btns[j].addEventListener('error', this.errorCb)
       }
     }
-    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios'].includes(env)) {
+    // 自带浏览器打开
+    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios', 'Android_wb', 'Android_qq', 'ios_qq'].includes(env)) {
       for (let j = 0; j < el.length; j++) {
         el[j].addEventListener('click', () => {
           this.targetApp(urlParams)
         })
       }
     }
-    if (['PC'].includes(env)) {
-      this.options.env_pc(
-        {
-          url: setURLParams(window.location.origin, urlParams)
-        }
-      )
+    if (this.options?.envCb) {
+      // 环境回调
+      this.options.envCb({
+        env,
+        params: urlParams,
+        urlParams: setURLParams('', urlParams)
+      })
     }
   }
   targetApp(urlParams) {
     const env = this.env
+    if (env.includes('qq') || env.includes('wb')) {
+      this.options.error('fail')
+      return
+    }
     const appScheme = 'psmc://'
     const appOpenTimeout = 3000
     const startTime = Date.now()
@@ -148,7 +163,10 @@ class Xsdk {
       if ((currentTime - startTime) > appOpenTimeout) {
         clearInterval(checkAppOpenInterval)
         if (['Android_pad', 'pad', 'Android'].includes(env)) {
-          window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
+          window.location.href = 'market://details?id=cnki.net.psmc'
+          setTimeout(() => {
+            window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
+          }, 1500)
         }
         if (['ios_pad', 'ios'].includes(env)) {
           window.location.href = 'https://itunes.apple.com/cn/app/apple-store/id1459607218'

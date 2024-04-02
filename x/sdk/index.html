@@ -4,55 +4,87 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .m5{
+          margin: 5px;
+        }
+    </style>
 </head>
 <body>
-<div class="x-openApp">
+<button class="x-openApp m5">
     吊起app
+</button>
+<button id="anzhuologin" class="m5" style="display: block">安卓登录</button>
+<div class="m5">
+    <span>登录用户信息：</span>
+    <span id="userInfo"></span>
 </div>
-
-
-<!--<div class="x-shareWx">-->
-<!--    分享-->
-<!--</div>-->
 </body>
 <script src="./x-sdk.js"></script>
 <script src="./vconsole.min.js"></script>
 <script>
     new VConsole()
-    xsdk.openApp({
+    const domain = document.domain.split('.')[0]
+    const actionUrl = {
+        xtest: 'https://xtest.cnki.net/activity?openHtml=https://xtest.cnki.net/web/test/',
+        x: 'https://xtest.cnki.net/activity?openHtml=https://xtest.cnki.net/web/test/'
+    }[domain]
+
+    const openHtml = {
+        xtest: 'https://xtest.cnki.net/web/test/?',
+        x: 'https://x.cnki.net/web/test/?'
+    }[domain]
+    window.xsdk.openApp({
         debug: false,
-        target:'readService',
         extinfo: {
-            action:'readService',
-            actionUrl:'https://x.cnki.net/activity/signIn.html'
-        }, // 微信开放标签参数，默认：{ action: 'readService', actionUrl: window.location.
-        params: {}, // 打开应用时额外携带的参数
+            action: 'openHtml',
+            actionUrl: actionUrl
+        },
+        target: 'activity',
+        params: {
+            openHtml: openHtml
+        },
         success: (e) => {
-            console.log('成功')
+            console.log('success')
         },
-        // 失败回调
         error: (e) => {
-            if (e === 'fail') {
-                // 处理失败情况
-            }
-        },
-        env_pc: (e) => {
             console.log(e)
+        },
+        envCb: (e) => {
+
         }
     })
 
-    // document.querySelector('.x-shareWx').addEventListener('click', () =>{
-    //     console.log('微信分享测试')
-    //     xsdk.shareWx({
-    //         title: '研学微信分享测试',
-    //         desc: '研学微信分享测试',
-    //         link: 'https://x.cnki.net/web/test',
-    //         imgUrl: 'https://x.cnki.net/web/test/logo.jpg',
-    //         success: (res) =>{
-    //             console.log(res)
-    //         }
-    //     })
-    // })
 
+
+    const getCookie = (name) => {
+        const reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)')
+        const match = document.cookie.match(reg)
+        if (match) {
+            return decodeURIComponent(match[2])
+        } else {
+            return null
+        }
+    }
+    fetch(`https://x.cnki.net/search/Home/GetUserInfo?token=${getCookie('LID')}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.querySelector('#userInfo').innerHTML = JSON.stringify(data.Data)
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+
+    document.querySelector('#anzhuologin').addEventListener('click',()=>{
+        const urlString = window.location.href
+        const url = new URL(urlString)
+        const baseUrl = `${url.protocol}//${url.hostname}${url.pathname}`
+        window.location.href = baseUrl + '?login=true&backlogin=true'
+    })
 </script>
 </html>

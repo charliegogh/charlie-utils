@@ -23,8 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/x/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/sdk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build-rollup" />
-        <item itemvalue="Node.js.test.js (1)" />
-        <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="npm.build-publish" />
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.test.js (1)" />
+        <item itemvalue="Node.js.app.js (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +440,19 @@
       <workItem from="1710292216207" duration="4247000" />
       <workItem from="1710382909152" duration="9624000" />
       <workItem from="1710461249224" duration="9975000" />
-      <workItem from="1710727518288" duration="2515000" />
+      <workItem from="1710727518288" duration="5927000" />
+      <workItem from="1710896885809" duration="410000" />
+      <workItem from="1710902756667" duration="1565000" />
+      <workItem from="1710926747006" duration="5994000" />
+      <workItem from="1711069882617" duration="6041000" />
+      <workItem from="1711271577646" duration="2226000" />
+      <workItem from="1711358140064" duration="1804000" />
+      <workItem from="1711437978823" duration="103000" />
+      <workItem from="1711440413362" duration="6075000" />
+      <workItem from="1711501405131" duration="2568000" />
+      <workItem from="1711957805859" duration="5983000" />
+      <workItem from="1712020159815" duration="4947000" />
+      <workItem from="1712044595986" duration="1897000" />
     </task>
     <servers />
   </component>

@@ -3,10 +3,11 @@
 ### 环境检测
 
 - 个人电脑端 (PC)
-- 微信环境：Android 微信 (Android_wx)、iOS 微信 (iOS_wx)
-- QQ 环境：Android QQ (Android_qq)、iOS QQ (iOS_qq)
-- 平板设备：Android 平板 (Android_pad)、iOS 平板 (iOS_pad)、普通平板 (pad)
-- 普通移动设备：Android、iOS
+- 微信环境：Android 微信 (Android_wx)、iOS 微信 (ios_wx)
+- QQ 环境：Android QQ (Android_qq)、iOS QQ (ios_qq)
+- 微博环境：Android 微博 (Android_wb)、iOS 微博 (ios_wb)
+- 浏览器平板设备：Android 平板 (Android_pad)、iOS 平板 (ios_pad)、普通平板 (pad)
+- 浏览器普通移动设备：Android、ios
 
 ### 应用唤起
 
@@ -43,20 +44,25 @@
 ```javascript
 xsdk.openApp({
     debug: false,
-    extinfo: {}, // 微信开放标签参数，默认：{ action: 'readService', actionUrl: window.location.href }
+    // app 打开target
+    target:'readService',
+    extinfo: {
+        action:'readService',
+        actionUrl:'https://x.cnki.net/activity/signIn.html'
+    }, // 微信开放标签参数，默认：{ action: 'readService', actionUrl: window.location.
     params: {}, // 打开应用时额外携带的参数
     success: (e) => {
         console.log('成功')
     },
     // 失败回调
     error: (e) => {
-        if (e === 'fail') {
-            // 处理失败情况
-        }
+        // code 40001 微信sdk 初始化失败
+        // code 40002 微信sdk 打开微信失败
     },
-    env_pc: (e) => {
-        // pc 回调地址，返回拼接后参数
+    envCb: (e) => {
+        console.log(e)
     }
 })
 ```
 
+4. 
