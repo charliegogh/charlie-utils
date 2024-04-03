@@ -12,7 +12,7 @@
 </head>
 <body>
 <button class="x-openApp m5">
-    吊起app
+    吊起app1
 </button>
 <button id="anzhuologin" class="m5" style="display: block">安卓登录</button>
 <div class="m5">
@@ -23,7 +23,9 @@
 <script src="./x-sdk.js"></script>
 <script src="./vconsole.min.js"></script>
 <script>
+    console.log(window.navigator.userAgent)
     new VConsole()
+
     const domain = document.domain.split('.')[0]
     const actionUrl = {
         xtest: 'https://xtest.cnki.net/activity?openHtml=https://xtest.cnki.net/web/test/',
@@ -33,27 +35,43 @@
     const openHtml = {
         xtest: 'https://xtest.cnki.net/web/test/?',
         x: 'https://x.cnki.net/web/test/?'
-    }[domain]
-    window.xsdk.openApp({
-        debug: false,
-        extinfo: {
-            action: 'openHtml',
-            actionUrl: actionUrl
-        },
-        target: 'activity',
-        params: {
-            openHtml: openHtml
-        },
-        success: (e) => {
-            console.log('success')
-        },
-        error: (e) => {
-            console.log(e)
-        },
-        envCb: (e) => {
+    }[domain] ||'https://x.cnki.net/web/test'
 
-        }
-    })
+
+    const appScheme = 'psmc://'
+    const appOpenTimeout = 3000
+    const startTime = Date.now()
+    const setURLParams = (url, params) => {
+        return url + '?' + Object.keys(params).map(i => i + '=' + params[i]).join('&')
+    }
+    let urlParams={
+        openHtml:openHtml+'?v='+new Date().getTime(),
+    }
+    const targetSrc = window.location.host + '/read' + setURLParams('', urlParams)
+    setTimeout(()=>{
+        window.location.href=appScheme+targetSrc
+    },3000)
+
+    // window.xsdk.openApp({
+    //     debug: false,
+    //     extinfo: {
+    //         action: 'openHtml',
+    //         actionUrl: actionUrl
+    //     },
+    //     target: 'activity',
+    //     params: {
+    //         openHtml: openHtml
+    //     },
+    //     success: (e) => {
+    //         console.log('success')
+    //     },
+    //     error: (e) => {
+    //         console.log(e)
+    //     },
+    //     envCb: (e) => {
+    //
+    //     }
+    // })
 
 
 

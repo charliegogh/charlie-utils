@@ -29,7 +29,7 @@ class Xsdk {
       const isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
       const isWx = ua.indexOf('MicroMessenger') > -1
       const isQQ = ua.indexOf('QQTheme') > -1
-      const isWeiBo = ua.toLocaleUpperCase().indexOf('weibo') !== -1
+      const isWeiBo = ua.toLowerCase().match(/WeiBo/i) == 'weibo'
       const isPad = screenWidth >= 500 && screenWidth <= 1200
       const isYanXueApp = ua.indexOf('psmc') !== -1
       if (isWx) {
@@ -37,9 +37,8 @@ class Xsdk {
       } else
       if (isQQ) {
         this.env = isAndroid ? 'Android_qq' : 'ios_qq'
-      } else
-      if (isWeiBo) {
-        this.env = isWeiBo ? 'Android_wb' : 'ios_wb'
+      } else if (isWeiBo) {
+        this.env = isAndroid ? 'Android_wb' : 'ios_wb'
       } else if (isYanXueApp) {
         this.env = isAndroid ? 'Android_yx' : 'ios_yx'
       } else {
@@ -49,7 +48,7 @@ class Xsdk {
         }
       }
     }
-    console.log('xsdk: current env' + this.env)
+    console.log('xsdk: current env ' + this.env)
   }
 
   initWXJsdk() {
@@ -131,7 +130,7 @@ class Xsdk {
       }
     }
     // 自带浏览器打开
-    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios', 'Android_wb', 'Android_qq', 'ios_qq'].includes(env)) {
+    if (['Android_pad', 'ios_pad', 'pad', 'Android', 'ios', 'Android_wb', 'ios_wb', 'Android_qq', 'ios_qq'].includes(env)) {
       for (let j = 0; j < el.length; j++) {
         el[j].addEventListener('click', () => {
           this.targetApp(urlParams)
@@ -149,6 +148,7 @@ class Xsdk {
   }
   targetApp(urlParams) {
     const env = this.env
+    console.log(env)
     if (env.includes('qq') || env.includes('wb')) {
       this.options.error('fail')
       return
@@ -163,10 +163,11 @@ class Xsdk {
       if ((currentTime - startTime) > appOpenTimeout) {
         clearInterval(checkAppOpenInterval)
         if (['Android_pad', 'pad', 'Android'].includes(env)) {
-          window.location.href = 'market://details?id=cnki.net.psmc'
-          setTimeout(() => {
-            window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
-          }, 1500)
+          window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
+          // window.location.href = 'market://details?id=cnki.net.psmc'
+          // setTimeout(() => {
+          // window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
+          // }, 1500)
         }
         if (['ios_pad', 'ios'].includes(env)) {
           window.location.href = 'https://itunes.apple.com/cn/app/apple-store/id1459607218'
