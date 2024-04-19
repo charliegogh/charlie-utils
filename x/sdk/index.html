@@ -5,74 +5,123 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .m5{
-          margin: 5px;
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
+
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .m5 {
+            width: 100%;
+            margin: 5px;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        #userInfo {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            word-break: break-all;
+        }
+
     </style>
 </head>
 <body>
-<button class="x-openApp m5">
-    吊起app1
+<button class="x-openApp m5" style="display: none">
+    吊起app
 </button>
-<button id="anzhuologin" class="m5" style="display: block">安卓登录</button>
+<button id="anzhuologin" class="m5">
+    安卓登录
+</button>
 <div class="m5">
     <span>登录用户信息：</span>
     <span id="userInfo"></span>
 </div>
+<img src="1.png" id="img"
+    referrerpolicy="no-referrer"
+/>
 </body>
 <script src="./x-sdk.js"></script>
 <script src="./vconsole.min.js"></script>
 <script>
-    console.log(window.navigator.userAgent)
-    new VConsole()
 
+    fetch(`https://ix.cnki.net/read/litNotes/getWeChatModel?url=https%3A%2F%2Fx.cnki.net%2Fweb%2Ftrilalreadtest%2Farticle%2FtrialXmlRead.html%3FfileName%3DXGXS202306002059%26tableName%3DIPFDTOTAL%26dbCode%3DIPFD%26fileSourceType%3D1%26groupId%3D%26appId%3DCRSP_BASIC_PSMC%26SharedTextId%3D%26act%3D%26f%3Dtr`)
+        .then((res) => res.json())
+        .then((res) => {
+            console.log(res)
+        })
+
+    new VConsole()
     const domain = document.domain.split('.')[0]
     const actionUrl = {
         xtest: 'https://xtest.cnki.net/activity?openHtml=https://xtest.cnki.net/web/test/',
-        x: 'https://xtest.cnki.net/activity?openHtml=https://xtest.cnki.net/web/test/'
+        x: 'https://x.cnki.net/activity?openHtml=https://x.cnki.net/activity/openApp/'
     }[domain]
-
     const openHtml = {
         xtest: 'https://xtest.cnki.net/web/test/?',
-        x: 'https://x.cnki.net/web/test/?'
-    }[domain] ||'https://x.cnki.net/web/test'
+        x: 'https://x.cnki.net/activity/openApp/?'
+    }[domain] || 'https://x.cnki.net/activity/openApp/?'
 
-
-    const appScheme = 'psmc://'
-    const appOpenTimeout = 3000
-    const startTime = Date.now()
-    const setURLParams = (url, params) => {
-        return url + '?' + Object.keys(params).map(i => i + '=' + params[i]).join('&')
-    }
-    let urlParams={
-        openHtml:openHtml+'?v='+new Date().getTime(),
-    }
-    const targetSrc = window.location.host + '/read' + setURLParams('', urlParams)
-    setTimeout(()=>{
-        window.location.href=appScheme+targetSrc
-    },3000)
-
-    // window.xsdk.openApp({
-    //     debug: false,
-    //     extinfo: {
-    //         action: 'openHtml',
-    //         actionUrl: actionUrl
-    //     },
-    //     target: 'activity',
-    //     params: {
-    //         openHtml: openHtml
-    //     },
-    //     success: (e) => {
-    //         console.log('success')
-    //     },
-    //     error: (e) => {
-    //         console.log(e)
-    //     },
-    //     envCb: (e) => {
-    //
-    //     }
-    // })
-
+    window.xsdk.openApp({
+        debug: false,
+        extinfo: {
+            action: 'openHtml',
+            actionUrl: actionUrl
+        },
+        target: 'activity',
+        params: {
+            openHtml: openHtml
+        },
+        success: (e) => {
+            console.log('success')
+        },
+        error: (e) => {
+            alert('请在浏览器中打开')
+        },
+        envCb: (e) => {
+            setTimeout(()=>{
+                document.querySelector('.x-openApp').style.display = 'block'
+            },2000)
+            let longPressTimer
+            document.querySelector('#img').addEventListener('touchstart',()=>{
+                clearTimeout(longPressTimer)
+                const obj = {
+                    imgUrl: "https://x.cnki.net/activity/openApp/1.png",
+                    activityLink: "",
+                    messageLink: ""
+                }
+                longPressTimer = setTimeout(function() {
+                    if (e.env.includes('Android')){
+                        try {
+                            android.open("image_share:" + JSON.stringify(obj));
+                        } catch (e) {
+                            console.log(e)
+                        }
+                    }else {
+                        try {
+                            window.webkit.messageHandlers.image_share.postMessage(obj);
+                        } catch (e) {
+                            console.log(e,'~~~~~~~~~~~~~~~~')
+                        }
+                    }
+                }, 500)
+            })
+            document.querySelector('#img').addEventListener('touchend', function(event) {
+                clearTimeout(longPressTimer)
+            })
+        }
+    })
 
 
     const getCookie = (name) => {
@@ -98,7 +147,7 @@
             console.error('There was a problem with the fetch operation:', error);
         });
 
-    document.querySelector('#anzhuologin').addEventListener('click',()=>{
+    document.querySelector('#anzhuologin').addEventListener('click', () => {
         const urlString = window.location.href
         const url = new URL(urlString)
         const baseUrl = `${url.protocol}//${url.hostname}${url.pathname}`

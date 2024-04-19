@@ -1,5 +1,4 @@
 import html2canvas from 'html2canvas'
-
 class Screenshot {
   constructor() {
     this.startX = 0

@@ -14,10 +14,6 @@ class Xsdk {
     this.initEnv()
   }
 
-  /**
-   * 1、自带浏览器：安卓、微信、ipad
-   * 2、微信内部：安卓、微信
-   */
   initEnv() {
     const ua = window.navigator.userAgent
     const orientation = window.orientation
@@ -52,30 +48,39 @@ class Xsdk {
   }
 
   initWXJsdk() {
-    const that = this
     return new Promise((resolve, reject) => {
-      fetch(`${location.origin}/Trilalread/Member/GetWeChatModel?url=${window.location.href}`)
+      const domain = document.domain.split('.')[0]
+      const api = {
+        xtest: 'https://xfat.cnki.net/read/litNotes/',
+        x: 'https://ix.cnki.net/read/litNotes/'
+      }[domain]
+      fetch(`${api}getWeChatModel?url=${encodeURIComponent(window.location.href)}`)
         .then((res) => res.json())
         .then((res) => {
           wx.config({
             debug: this.options?.debug || false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
             appId: 'wx549fe1c34185bae9', // 必填，公众号的唯一标识
-            timestamp: res.Data.Result.timeStamp, // 必填，生成签名的时间戳
-            nonceStr: res.Data.Result.noncestr, // 必填，生成签名的随机串
-            signature: res.Data.Result.signature, // 必填，签名，见附录1
+            timestamp: res.content.timeStamp, // 必填，生成签名的时间戳
+            nonceStr: res.content.noncestr, // 必填，生成签名的随机串
+            signature: res.content.signature, // 必填，签名，见附录1
             jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData'], // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
             openTagList: ['wx-open-launch-app']
           })
           wx.ready(function() {
-            resolve()
+            resolve({
+              code: 0
+            })
           })
           wx.error(function(err) {
             if (err.errMsg != 'config:ok') {
-              that.options.error({
+              // that.options.error({
+              //   code: 40001,
+              //   msg: 'wx sdk config error'
+              // })
+              resolve({
                 code: 40001,
                 msg: 'wx sdk config error'
               })
-              // vm.toAppBtnIsShow = false;
             }
             console.log('错误：', err, JSON.stringify(err))
           })
@@ -104,11 +109,13 @@ class Xsdk {
     let urlParams = getURLParams()
     urlParams = this.options.params ? { ...this.options.params, ...urlParams } : urlParams
     if (env.includes('wx')) {
-      const extinfo = JSON.stringify(e.extinfo || { action: 'readService', actionUrl: window.location.href })
-      await this.initWXJsdk()
-      for (let j = 0; j < el.length; j++) {
-        if (env.includes('wx')) {
-          const html = `
+      const rs = await this.initWXJsdk()
+      // 初始化成功
+      if (rs.code === 0) {
+        const extinfo = JSON.stringify(e.extinfo || { action: 'readService', actionUrl: window.location.href })
+        for (let j = 0; j < el.length; j++) {
+          if (env.includes('wx')) {
+            const html = `
            <wx-open-launch-app class="wx2app-btn"
                           appid="wx86fb62b7b6e1dea7"
                           extinfo=${extinfo}
@@ -119,14 +126,21 @@ class Xsdk {
           </script>
       </wx-open-launch-app>
       `
-          el[j].innerHTML += html
+            el[j].innerHTML += html
+          }
         }
-      }
-      const btns = document.getElementsByClassName('wx2app-btn')
-      if (btns.length === 0) return
-      for (var j = 0; j < btns.length; j++) {
-        btns[j].addEventListener('launch', this.launchCb)
-        btns[j].addEventListener('error', this.errorCb)
+        const btns = document.getElementsByClassName('wx2app-btn')
+        if (btns.length === 0) return
+        for (var j = 0; j < btns.length; j++) {
+          btns[j].addEventListener('launch', this.launchCb)
+          btns[j].addEventListener('error', this.errorCb)
+        }
+      } else {
+        for (let j = 0; j < el.length; j++) {
+          el[j].addEventListener('click', () => {
+            this.options.error(rs)
+          })
+        }
       }
     }
     // 自带浏览器打开
@@ -148,15 +162,18 @@ class Xsdk {
   }
   targetApp(urlParams) {
     const env = this.env
-    console.log(env)
     if (env.includes('qq') || env.includes('wb')) {
-      this.options.error('fail')
+      this.options.error({
+        code: 40002,
+        msg: env + 'open app error'
+      })
       return
     }
     const appScheme = 'psmc://'
     const appOpenTimeout = 3000
     const startTime = Date.now()
     const targetSrc = window.location.host + '/' + this.options.target + setURLParams('', urlParams)
+    console.log(appScheme + targetSrc + '唤起地址')
     window.location.href = appScheme + targetSrc
     const checkAppOpenInterval = setInterval(function() {
       const currentTime = Date.now()
@@ -164,18 +181,47 @@ class Xsdk {
         clearInterval(checkAppOpenInterval)
         if (['Android_pad', 'pad', 'Android'].includes(env)) {
           window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
-          // window.location.href = 'market://details?id=cnki.net.psmc'
-          // setTimeout(() => {
-          // window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=cnki.net.psmc'
-          // }, 1500)
+          dialog(() => {
+            window.location.href = 'market://details?id=cnki.net.psmc'
+          })
         }
         if (['ios_pad', 'ios'].includes(env)) {
           window.location.href = 'https://itunes.apple.com/cn/app/apple-store/id1459607218'
         }
-      } else {
       }
     }, 1000)
+    function dialog(cb) {
+      const overlayDiv = document.createElement('div')
+      overlayDiv.className = 'xsdk-overlay'
+      const dialogDiv = document.createElement('div')
+      dialogDiv.className = 'xsdk-dialog'
+      dialogDiv.innerHTML = `
+    <div class="xsdk-dialog__content">
+        <div class="xsdk-dialog__message">请前往安装知网研学APP</div>
+        <div class="xsdk-hairline--top xsdk-dialog__footer">
+            <button type="button" class="xsdk-button xsdk-dialog__cancel">
+                <div class="xsdk-button__content"><span class="xsdk-button__text">取消</span></div>
+            </button>
+            <button type="button" class="xsdk-button xsdk-dialog__confirm">
+                <div class="xsdk-button__content"><span class="xsdk-button__text">确认</span></div>
+            </button>
+        </div>
+    </div>
+`
+      document.body.appendChild(overlayDiv)
+      document.body.appendChild(dialogDiv)
+      document.querySelector('.xsdk-dialog__cancel').addEventListener('click', () => {
+        document.querySelector('.xsdk-overlay').style.display = 'none'
+        document.querySelector('.xsdk-dialog').style.display = 'none'
+      })
+      document.querySelector('.xsdk-dialog__confirm').addEventListener('click', () => {
+        // document.querySelector('.xsdk-overlay').style.display = 'none'
+        // document.querySelector('.xsdk-dialog').style.display = 'none'
+        cb()
+      })
+    }
   }
+
   shareWx(e) {
     const params = {
       title: '研学微信分享测试',
@@ -211,7 +257,7 @@ class Xsdk {
         const computedStyle = window.getComputedStyle(targetEl)
         if (computedStyle && computedStyle.display !== 'none') {
         } else {
-          that.targetApp()
+          that.targetApp(getURLParams())
         }
       }, 500)
     })

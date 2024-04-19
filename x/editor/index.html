@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单的富文本编辑器</title>
+    <style>
+        .editor-container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .editor-toolbar {
+            margin-bottom: 10px;
+        }
+        .editor-content {
+            border: 1px solid #ccc;
+            min-height: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="editor-container">
+    <div class="editor-toolbar">
+        <button onclick="execCommand('bold')">加粗</button>
+        <button onclick="execCommand('italic')">斜体</button>
+        <button onclick="execCommand('underline')">下划线</button>
+        <button onclick="execCommand('insertOrderedList')">有序列表</button>
+        <button onclick="execCommand('insertUnorderedList')">无序列表</button>
+    </div>
+    <div class="editor-content" contenteditable="true" id="editor">
+        <span>我回答的问题</span>
+    </div>
+</div>
+
+<script>
+    function execCommand(command) {
+        document.execCommand(command, false, null);
+    }
+</script>
+
+</body>
+</html>
