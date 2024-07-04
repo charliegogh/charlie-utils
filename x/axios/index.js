@@ -1,12 +1,12 @@
 import axios from 'axios'
-import { getToken } from './js-cookie'
+import { getCookie } from './js-cookie'
 import { getRefreshToken, logOut } from './auth'
 import refreshToken from './refreshToken'
 
 const service = axios.create()
 service.interceptors.request.use(
   config => {
-    config.headers['Authorization'] = 'Bearer ' + getToken('jwtToken')
+    config.headers['Authorization'] = 'Bearer ' + getCookie('jwtToken')
     return config
   },
   error => {

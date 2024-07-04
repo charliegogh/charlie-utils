@@ -1,9 +1,9 @@
-import { getToken, setToken, removeToken } from './js-cookie'
+import { getCookie, setCookie, removeCookie } from './js-cookie'
 import { AppId, ecptokenApi } from './env'
 const getRefreshToken = async() => {
   removeURLParameter('LID')
-  const LID = getToken('LID')
-  const jwtToken = getToken('jwtToken')
+  const LID = getCookie('LID')
+  const jwtToken = getCookie('jwtToken')
   if (!LID) logOut()
   if (jwtToken) return
   const clientIp = await getUserIp()
@@ -11,7 +11,7 @@ const getRefreshToken = async() => {
     method: 'POST',
     body: JSON.stringify({
       AppId,
-      ClientId: getToken('Ecp_ClientId') || '',
+      ClientId: getCookie('Ecp_ClientId') || '',
       ClientIp: clientIp,
       EcpToken: LID
     }),
@@ -23,8 +23,8 @@ const getRefreshToken = async() => {
   if (rs.Success) {
     rs.clientIp = clientIp
     const { JwtToken, ExpireIn } = rs.Content
-    removeToken('jwtToken')
-    setToken('jwtToken', JwtToken, ExpireIn - 200)
+    removeCookie('jwtToken')
+    setCookie('jwtToken', JwtToken, ExpireIn - 200)
   }
   return Promise.resolve({
     ...rs,

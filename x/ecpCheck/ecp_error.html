@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>知网研学</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="keywords"
+    content="中国知网,知网研学,研学平台,数字出版,增强出版,碎片化阅读,知识发现,知识管理,知识服务,数字图书馆,学术社交,研读学习,创作投稿，学习笔记,学术文献,期刊,博士论文,硕士论文,会议论文,报纸,图书" />
+  <meta name="description" content="知网研学，是集文献检索、深度阅读、论文创作、笔记整理、成果管理、阅读写作训练等功能于一体的个人终身学习平台，支持Web/桌面/APP多端云同步。" />
+</head>
+<body>
+  您当前使用机构登录
+  <button id="btn1">进入研学</button>
+  <button id="btn2">返回</button>
+</body>
+<script>
+  function getURLParams(name) {
+    var search = window.location.search.substring(1);
+    var params = search.split("&");
+    var paramsObj = {};
+
+    for (var i = 0; i < params.length; i++) {
+      var pair = params[i].split("=");
+      var key = decodeURIComponent(pair[0]);
+      var value = decodeURIComponent(pair[1] || "");
+      paramsObj[key] = value;
+    }
+
+    if (name) {
+      return paramsObj[name];
+    }
+    return paramsObj;
+  }
+  const params = getURLParams()
+  var fromUrl = (params && params.fromUrl) ? params.fromUrl : 'https://cnki.net/';
+  var targetUrl = (params && params.targetUrl) ? params.targetUrl : 'https://x.cnki.net/';
+  document.getElementById("btn1").addEventListener("click", function() {
+    const url = new URL(targetUrl)
+    if (url.host.split('.')[0] === 'x') {
+      const domain = document.domain.split('.')[0]
+      if (['192', 'xtest'].includes(domain)) {
+        url.host = 'xtest.cnki.net'
+      }
+    }
+    window.location.href = url;
+  });
+  document.getElementById("btn2").addEventListener("click", function() {
+    window.location.href = fromUrl;
+  });
+</script>
+</html>

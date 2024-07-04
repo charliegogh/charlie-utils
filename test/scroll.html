@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://picx.cnki.net/search/common/css/colorSystem.css" rel="stylesheet">
+  <style>
+    /* 滚动条轨道 */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    /* 滚动条滑块的样式 */
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--Grayblue_08);
+      border-radius: 4px;
+      min-height: 24px;
+    }
+    ::-webkit-scrollbar-thumb:vertical{
+      /*border-left: 2px solid #ffffff;*/
+      /*border-right: 2px solid #ffffff;*/
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: var(--Grayblue_07);
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding-right: 10px;
+    }
+
+    .content {
+      height: 200px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      width: 300px;
+      margin: 20px auto;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. Nullam quis ultrices ipsum. Vivamus magna elit, placerat non dolor ut, efficitur venenatis mi. Duis interdum cursus purus, nec luctus ligula sollicitudin a. Phasellus scelerisque libero et velit tincidunt, at pharetra turpis dictum. Suspendisse potenti. Fusce eget consequat mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id commodo nisl. Integer at augue sed felis tempus faucibus. Vivamus ut dui eu sapien scelerisque fermentum. Etiam nec lacus nunc.</p>
+  <p>Integer ut nisl id purus venenatis iaculis. Donec sollicitudin velit vel nunc ullamcorper, a efficitur nisi fringilla. Suspendisse consectetur purus vel nisi faucibus, at volutpat turpis auctor. Morbi convallis metus nec turpis faucibus, id hendrerit libero elementum. In pharetra lacus at nunc ullamcorper, nec placerat mi vulputate. Ut ut dui nec purus bibendum consequat. Vestibulum imperdiet, erat ac porta convallis, risus ante interdum dui, eget scelerisque ligula lectus a quam. Duis vehicula pharetra purus in sodales.</p>
+  <p>Curabitur ut enim risus. In nec neque eu nulla scelerisque faucibus id eu nulla. Sed ac justo sed nisl mollis malesuada. Nam suscipit augue ut nunc aliquam, vel venenatis tortor mattis. Vestibulum faucibus libero a nisl tincidunt congue. Maecenas aliquet odio at justo posuere gravida. Cras dapibus leo at risus vehicula scelerisque. Nulla ut eros sit amet justo consequat iaculis.</p>
+</div>
+</body>
+</html>

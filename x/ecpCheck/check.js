@@ -28,32 +28,26 @@ function getCookie(name) {
 }
 
 const redirect = () => {
-  const LID = getCookie('LID')
-  if (!LID) {
-    return
-  }
   const source = getURLParams('source')
-  if (source) {
-    removeURLParameter('source')
-    const url = new URL(dataSource[source])
-    if (url.host.split('.')[0] === 'x') {
-      const domain = document.domain.split('.')[0]
-      if (['192', 'xtest'].includes(domain)) {
-        url.host = 'xtest.cnki.net'
-      }
+  if (!source) {
+    return
+  }
+  removeURLParameter('source')
+  const url = new URL(dataSource[source])
+  if (url.host.split('.')[0] === 'x') {
+    const domain = document.domain.split('.')[0]
+    if (['192', 'xtest'].includes(domain)) {
+      url.host = 'xtest.cnki.net'
     }
-    window.location.href = url
-    return
   }
-  const AI_STATUS = getCookie(`AI_STATUS`)
+  window.location.href = url
+}
 
-  if (!AI_STATUS) {
-    return
-  }
-  if (AI_STATUS === LID + '__1' && !window.location.href.includes('192')) {
+const LID = getCookie('LID')
+const AI_STATUS = getCookie(`${LID}_AI_STATUS`)
+if (LID) {
+  if (AI_STATUS === '1') {
+    redirect()
     window.location.href = '/web/psmc-ai'
   }
 }
-redirect()
-
-export default redirect
