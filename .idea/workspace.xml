@@ -23,34 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/zip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/scroll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/ecpCheck/check.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/ecpCheck/ecp_error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/ecpCheck/机构检测.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/screenshot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/screenshot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/screenshot.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/vconsole.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-s.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-s.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-sdk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/x-sdk.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/axios/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/axios/js-cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/js-cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/editor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x/redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/redirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +87,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;x-sdk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/build&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/lib&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -120,11 +102,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\lib" />
+      <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\build" />
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
       <recent name="E:\utils\charlie-utils\x\Screenshot" />
-      <recent name="E:\utils\charlie-utils\x\sdk" />
-      <recent name="E:\utils\charlie-utils\x\openApp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
@@ -134,24 +116,17 @@
       <recent name="E:\utils\charlie-utils\output" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build-rollup">
+  <component name="RunManager" selected="Node.js.app.js (2)">
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/x/app.js" working-dir="$PROJECT_DIR$/x">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
+      <method v="2" />
+    </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/app.js" working-dir="$PROJECT_DIR$/lib">
       <method v="2" />
     </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/x/index.js" working-dir="$PROJECT_DIR$/x">
-      <method v="2" />
-    </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
-      <method v="2" />
-    </configuration>
-    <configuration name="build-publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build-publish" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -166,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.app.js (2)" />
+        <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="npm.build-rollup" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="npm.build-publish" />
       </list>
     </recent_temporary>
   </component>
@@ -518,6 +493,21 @@
       <workItem from="1719389632671" duration="1877000" />
       <workItem from="1719452631115" duration="2693000" />
       <workItem from="1719985516917" duration="4055000" />
+      <workItem from="1720084859716" duration="597000" />
+      <workItem from="1720143760624" duration="1378000" />
+      <workItem from="1720516233149" duration="628000" />
+      <workItem from="1720599158772" duration="865000" />
+      <workItem from="1720626654799" duration="649000" />
+      <workItem from="1720758669113" duration="1234000" />
+      <workItem from="1721118778584" duration="7343000" />
+      <workItem from="1721196124220" duration="5141000" />
+      <workItem from="1721286845868" duration="895000" />
+      <workItem from="1721700334466" duration="5157000" />
+      <workItem from="1721877060563" duration="596000" />
+      <workItem from="1722220185914" duration="819000" />
+      <workItem from="1722909447254" duration="899000" />
+      <workItem from="1723081492774" duration="1652000" />
+      <workItem from="1723142764754" duration="54000" />
     </task>
     <servers />
   </component>

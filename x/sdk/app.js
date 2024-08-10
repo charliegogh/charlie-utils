@@ -54,7 +54,8 @@ class Xsdk {
         xtest: 'https://xfat.cnki.net/read/litNotes/',
         x: 'https://ix.cnki.net/read/litNotes/'
       }[domain]
-      fetch(`${api}getWeChatModel?url=${encodeURIComponent(window.location.href)}`)
+      fetch(`${location.origin}/Trilalread/Member/GetWeChatModel?url=${window.location.href}`)
+      // fetch(`${api}getWeChatModel?url=${encodeURIComponent(window.location.href)}`)
         .then((res) => res.json())
         .then((res) => {
           wx.config({
