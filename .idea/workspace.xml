@@ -23,16 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/rs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/axios/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/axios/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/axios/xaxios.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/redirect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/sdk/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/axios/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/axios/js-cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/js-cookie.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;x-sdk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/axios&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -102,11 +103,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\x\axios" />
       <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\build" />
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
-      <recent name="E:\utils\charlie-utils\x\Screenshot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
@@ -116,7 +117,7 @@
       <recent name="E:\utils\charlie-utils\output" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js (2)">
+  <component name="RunManager" selected="npm.build-rollup">
     <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/x/app.js" working-dir="$PROJECT_DIR$/x">
       <method v="2" />
     </configuration>
@@ -141,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build-rollup" />
         <item itemvalue="Node.js.app.js (2)" />
         <item itemvalue="Node.js.app.js (1)" />
-        <item itemvalue="npm.build-rollup" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.app.js" />
       </list>
@@ -508,6 +509,10 @@
       <workItem from="1722909447254" duration="899000" />
       <workItem from="1723081492774" duration="1652000" />
       <workItem from="1723142764754" duration="54000" />
+      <workItem from="1723443672663" duration="2234000" />
+      <workItem from="1723446767171" duration="226000" />
+      <workItem from="1724046950500" duration="3557000" />
+      <workItem from="1724121125400" duration="5264000" />
     </task>
     <servers />
   </component>

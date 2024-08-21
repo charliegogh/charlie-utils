@@ -1,12 +1,15 @@
 import axios from 'axios'
-import { getCookie } from './js-cookie'
-import { getRefreshToken, logOut } from './auth'
+import { getToken } from './js-cookie'
+import { logOut } from './auth'
 import refreshToken from './refreshToken'
+import permission from './permission'
 
 const service = axios.create()
 service.interceptors.request.use(
   config => {
-    config.headers['Authorization'] = 'Bearer ' + getCookie('jwtToken')
+    if (getToken('jwtToken')) {
+      config.headers['Authorization'] = 'Bearer ' + getToken('jwtToken')
+    }
     return config
   },
   error => {
@@ -15,15 +18,13 @@ service.interceptors.request.use(
 )
 service.interceptors.response.use(
   async(response) => {
-    const code = response.data?.code
+    const code = response.data?.code || response.data?.Code
     if ([5014].includes(code)) {
       logOut()
+      return
     }
     if ([5013].includes(code)) {
       return refreshToken(service, response)
-    }
-    if (response.data?.statusCode === 403) {
-      return Promise.reject(406)
     }
     return Promise.resolve(response)
   },
@@ -44,7 +45,7 @@ const fetch = async(method, url, data = {}, config = {}) => {
     default:
       config['data'] = data
   }
-  await getRefreshToken()
+  await permission()
   return service(config).then((res) => {
     return res.data
   })

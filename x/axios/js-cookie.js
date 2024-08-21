@@ -1,4 +1,4 @@
-const getCookie = (name) => {
+const getToken = (name) => {
   const reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)')
   const match = document.cookie.match(reg)
   if (match) {
@@ -13,22 +13,21 @@ const getCookie = (name) => {
  * @param value
  * @param date 以天为单位
  */
-const setCookie = (name, value, days) => {
+const setToken = (name, value, milliseconds) => {
   let expires = ''
-  const isLID = name.indexOf('LID') !== -1
-  if (days !== 0) {
+  if (milliseconds && milliseconds !== 0) {
     const date = new Date()
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000))
+    date.setTime(date.getTime() + milliseconds)
     expires = `; expires=${date.toGMTString()}`
   }
-  document.cookie = `${name}=${escape(value)}${expires}; path=/; domain=${isLID ? 'cnki.net' : ''}`
+  document.cookie = `${name}=${escape(value)}${expires}; path=/; domain=cnki.net`
 }
 
-const removeCookie = (name) => {
-  setCookie(name, '', -1)
+const removeToken = (name) => {
+  setToken(name, '', -1)
 }
 export {
-  getCookie,
-  setCookie,
-  removeCookie
+  getToken,
+  setToken,
+  removeToken
 }

@@ -8,12 +8,13 @@ import postcss from 'rollup-plugin-postcss'
 const json = require('rollup-plugin-json') // import 支持
 // import { eslint } from 'rollup-plugin-eslint'
 export default {
-  input: './x/redirect.js',
+  // input: './x/redirect.js',
   // input: './x/ecpCheck/app.js',
+  input: './x/axios/index.js',
   output: {
-    file: 'dist/redirect.js',
+    file: 'dist/xaxios.min.js',
     format: 'umd',
-    name: 'xsdk'
+    name: 'xaxios'
   },
   plugins: [
     postcss({

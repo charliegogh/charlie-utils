@@ -1,17 +1,13 @@
-import { getCookie, setCookie, removeCookie } from './js-cookie'
-import { AppId, ecptokenApi } from './env'
+import { getToken, setToken, removeToken } from './js-cookie'
+import { AppId, ecptokenApi, env } from './env'
 const getRefreshToken = async() => {
-  removeURLParameter('LID')
-  const LID = getCookie('LID')
-  const jwtToken = getCookie('jwtToken')
-  if (!LID) logOut()
-  if (jwtToken) return
+  const LID = getToken('LID')
   const clientIp = await getUserIp()
   const frs = await fetch(ecptokenApi, {
     method: 'POST',
     body: JSON.stringify({
       AppId,
-      ClientId: getCookie('Ecp_ClientId') || '',
+      ClientId: getToken('Ecp_ClientId') || '',
       ClientIp: clientIp,
       EcpToken: LID
     }),
@@ -23,8 +19,8 @@ const getRefreshToken = async() => {
   if (rs.Success) {
     rs.clientIp = clientIp
     const { JwtToken, ExpireIn } = rs.Content
-    removeCookie('jwtToken')
-    setCookie('jwtToken', JwtToken, ExpireIn - 200)
+    removeToken('jwtToken')
+    setToken('jwtToken', JwtToken, ExpireIn - 200)
   }
   return Promise.resolve({
     ...rs,
@@ -33,17 +29,32 @@ const getRefreshToken = async() => {
 }
 
 const getUserIp = async() => {
-  const frs = await fetch('https://recsys.cnki.net/RCDService/api/UtilityOpenApi/GetUserIP', {
-    method: 'GET'
-  })
-  const { Data } = await frs.json()
-  return Promise.resolve(Data)
+  try {
+    const cache = getToken('yxIP')
+    if ((cache ?? '') === '') {
+      const frs = await fetch('https://recsys.cnki.net/RCDService/api/UtilityOpenApi/GetUserIP', {
+        method: 'GET'
+      })
+      const { Data } = await frs.json()
+      setToken(Data, 'yxIP')
+      return Promise.resolve(Data)
+    }
+    return Promise.resolve(cache)
+  } catch (e) {
+
+  }
 }
 
 const logOut = () => {
-  window.location.href = `/search?value=backLogin&w=登录失效，请重新登录&returnUrl=${window.location.href}`
+  if (env === 'x') {
+    window.location.href = 'https://gateway.cnki.net/aamsapi/credential/logout?appid=CRSP_BASIC_PSMC'
+  }
+  if (env === 'xtest') {
+    window.location.href = 'https://xtest.cnki.net/api/credential/logout?appid=CRSP_PSMC_RELEASE'
+  }
 }
 
+// 链接上的token信息
 export const removeURLParameter = (name) => {
   const url = new URL(window.location.href)
   url.searchParams.delete(name)
