@@ -23,17 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x/axios/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/axios/permission.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/axios/xaxios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/app/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/app/sid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/docx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/axios/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/axios/js-cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/axios/js-cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/richtext/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/math/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;x-sdk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/axios&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -103,9 +97,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\x\axios" />
       <recent name="E:\utils\charlie-utils\lib" />
-      <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\build" />
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
     </key>
@@ -513,6 +507,12 @@
       <workItem from="1723446767171" duration="226000" />
       <workItem from="1724046950500" duration="3557000" />
       <workItem from="1724121125400" duration="5264000" />
+      <workItem from="1724308871634" duration="832000" />
+      <workItem from="1724738344846" duration="5417000" />
+      <workItem from="1725498286635" duration="1096000" />
+      <workItem from="1725502990952" duration="6296000" />
+      <workItem from="1725851937694" duration="1861000" />
+      <workItem from="1726016683138" duration="10269000" />
     </task>
     <servers />
   </component>

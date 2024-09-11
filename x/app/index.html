@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+<body>
+<div>
+    其他CSS规则冲突：
+    检查是否有其他CSS规则覆盖了.slide-up或.transition-max-height的设置。
+    你可以通过逐步调试来检查这些问题。如果还是无法生效，可以考虑在开发者工具中手动修改CSS，观察是否能使动画生效。
+
+</div>
+
+
+<a href="https://alienzhou.github.io/web-highlighter/">web-highlighter</a>
+<a href="http://192.168.31.87:1001/">登录</a>
+<a href="http://192.168.31.87:3001/xmlRead/article/pdfMobile.html?pageType=ios&fileName=FJSX200803020&tableName=CJFDTOTAL&dbCode=CJFD&topic=3a351333-4a53-4e11-9541-aa3f4e373ce4&fileSourceType=1&taskId=0&from=ReadingHistory&groupId=&appId=CRSP_PSMC_RELEASE&act=&customReading=pdf">本地测试</a>
+<a href="https://xtest.cnki.net/xmlRead/article/pdfMobile.html?pageType=ios&fileName=FJSX200803020&tableName=CJFDTOTAL&dbCode=CJFD&topic=3a351333-4a53-4e11-9541-aa3f4e373ce4&fileSourceType=1&taskId=0&from=ReadingHistory&groupId=&appId=CRSP_PSMC_RELEASE&act=&customReading=pdf">阅读测试</a>
+<a href="https://x.cnki.net/xmlRead/article/mobile.html?pageType=ios&fileName=ZWBL20231115001&tableName=CAPJTOTAL&dbCode=CAPJ&topic=&_dev=s&fileSourceType=1&taskId=CAPJ&from=&groupId=&appId=CRSP_BASIC_PSMC&act=&customReading=" target="_blank">正式测试</a>
+<a href="https://x.cnki.net/web/ai/sid.html" target="_blank">设置SID</a>
+<button id="btn">原生测试</button>
+<script src="./touch-0.2.14.min.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+<script>
+    new VConsole()
+
+    touch.on('body', 'swipeleft swiperight swipedown swipeup tap', function(ev){
+        console.log("you have done", ev.type);
+    });
+    console.warn( navigator.userAgent)
+    let customSelection = null
+
+    const getURLParams = name => {
+        const searchPar = new URLSearchParams(window.location.search)
+        const paramsObj = {}
+        for (const [key, value] of searchPar.entries()) {
+            paramsObj[key] = value
+        }
+        if (name) {
+            return paramsObj[name]
+        }
+        return paramsObj
+    }
+     const isHarmonyFromAct = getURLParams('act')?.indexOf('harmony') > -1
+     const isHarmony = navigator.userAgent.indexOf('OpenHarmony') > -1
+     const isAndroid =
+        navigator.userAgent.indexOf('Android') > -1 ||
+        navigator.userAgent.indexOf('Adr') > -1 ||
+        isHarmonyFromAct
+    const eventBus = {
+        $on(event, callback) {
+            if (!window.app) window.app = {}
+            window.app[event] = e => {
+                callback(e)
+            }
+            // eslint-disable-next-line consistent-return
+            return this
+        },
+        $emit(params) {
+            params = JSON.stringify(params)
+            if (isHarmony) {
+                // eslint-disable-next-line no-undef
+                JSToHarmony.jsCallBack(params)
+                return
+            }
+            if (isAndroid) {
+                if (isHarmonyFromAct) {
+                    // eslint-disable-next-line no-undef
+                    JSToHarmony.jsCallBack(params)
+                    return
+                }
+                window.control.jsCallBack(params)
+            } else {
+                window.webkit.messageHandlers.jsCallBack.postMessage(params)
+            }
+        },
+    }
+
+    eventBus.$on('nativeToXMLRead',e=>{
+        setTimeout(()=>{
+            // const selection = window.getSelection();
+            // const range = (selection && selection.rangeCount > 0) ? selection.getRangeAt(0) : customSelection;
+            // const offset = range.startOffset;
+            // const text = range.toString();
+            // console.log('光标位置：', offset);
+            // console.log('选择文本：', text);
+            console.log(getSelectedText())
+        },1000)
+    })
+
+
+
+    function getSelectedText() {    //this function code is borrowed from: http://www.codetoad.com/javascript_get_selected_text.asp
+        var txt = "";
+        if (window.getSelection) {
+            txt = window.getSelection();
+        } else if (window.document.getSelection) {
+            txt = window.document.getSelection();
+        } else if (window.document.selection) {
+            txt = window.document.selection.createRange().text;
+        }
+        return txt;
+    }
+
+</script>
+</html>

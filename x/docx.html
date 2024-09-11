@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCX File Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #preview {
+            white-space: pre-wrap;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="docxUrl" placeholder="请输入DOCX文件的URL">
+<button id="loadDocx">预览docx</button>
+<button id="downloadDocx">下载docx</button>
+<div id="preview">File content will appear here...</div>
+
+<script>
+    const docxUrlInput = document.getElementById('docxUrl');
+    document.getElementById('loadDocx').addEventListener('click', async function() {
+        const url = docxUrlInput.value;
+        try {
+            // 使用 fetch 获取文件流
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Failed to download the file.');
+
+            // 将响应内容转换为 Blob
+            const blob = await response.blob();
+
+            console.log(blob)
+            // 创建文件读取器
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+                console.log(event)
+                const arrayBuffer = event.target.result;
+
+                // 使用 JSZip 和 docxtemplater 解析 docx 内容
+                const zip = new PizZip(arrayBuffer)
+                const doc = new docxtemplater().loadZip(zip)
+                document.getElementById('preview').textContent = doc.getFullText();
+            };
+
+            reader.readAsArrayBuffer(blob);
+
+        } catch (error) {
+            console.error('Error:', error);
+            document.getElementById('preview').textContent = 'Failed to load the DOCX file.';
+        }
+    });
+
+
+    document.getElementById('downloadDocx').addEventListener('click',  function() {
+        const url = docxUrlInput.value;
+        const link = document.createElement('a')
+        link.style.display = 'none'
+        // link.setAttribute('target', '_blank')
+        document.body.appendChild(link)
+        // eslint-disable-next-line no-undef
+        link.href = `${url}`
+        link.click()
+        document.body.removeChild(link)
+    });
+</script>
+
+<!-- 引入必要的库 -->
+<script src="
+https://cdn.jsdelivr.net/npm/pizzip@3.1.7/dist/pizzip.min.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.22.0/docxtemplater.min.js"></script>
+</body>
+</html>
