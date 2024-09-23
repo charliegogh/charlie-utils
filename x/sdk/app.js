@@ -28,6 +28,7 @@ class Xsdk {
       const isWeiBo = ua.toLowerCase().match(/WeiBo/i) == 'weibo'
       const isPad = screenWidth >= 500 && screenWidth <= 1200
       const isYanXueApp = ua.indexOf('psmc') !== -1
+      const isHarmony = ua.indexOf('OpenHarmony') !== -1
       if (isWx) {
         this.env = isAndroid ? 'Android_wx' : 'ios_wx'
       } else
@@ -37,6 +38,8 @@ class Xsdk {
         this.env = isAndroid ? 'Android_wb' : 'ios_wb'
       } else if (isYanXueApp) {
         this.env = isAndroid ? 'Android_yx' : 'ios_yx'
+      } else if (isHarmony) {
+        this.env = 'OpenHarmony_yx'
       } else {
         this.env = isAndroid ? (isPad ? 'Android_pad' : 'Android') : isIOS ? (isPad ? 'ios_pad' : 'ios') : 'pad'
         if (this.env.includes('pad')) {
@@ -49,11 +52,11 @@ class Xsdk {
 
   initWXJsdk() {
     return new Promise((resolve, reject) => {
-      const domain = document.domain.split('.')[0]
-      const api = {
-        xtest: 'https://xfat.cnki.net/read/litNotes/',
-        x: 'https://ix.cnki.net/read/litNotes/'
-      }[domain]
+      // const domain = document.domain.split('.')[0]
+      // const api = {
+      //   xtest: 'https://xfat.cnki.net/read/litNotes/',
+      //   x: 'https://ix.cnki.net/read/litNotes/'
+      // }[domain]
       fetch(`${location.origin}/Trilalread/Member/GetWeChatModel?url=${window.location.href}`)
       // fetch(`${api}getWeChatModel?url=${encodeURIComponent(window.location.href)}`)
         .then((res) => res.json())

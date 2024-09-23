@@ -23,11 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x/app/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/app/sid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/docx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/excel/data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x/excel/多维excel处理.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/richtext/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/math/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;x-sdk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/excel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -97,11 +97,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\x\excel" />
       <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\x\axios" />
       <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils\build" />
-      <recent name="E:\utils\charlie-utils\x\ecpCheck" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
@@ -513,6 +513,9 @@
       <workItem from="1725502990952" duration="6296000" />
       <workItem from="1725851937694" duration="1861000" />
       <workItem from="1726016683138" duration="10269000" />
+      <workItem from="1726125027129" duration="645000" />
+      <workItem from="1726193703026" duration="1843000" />
+      <workItem from="1727049315473" duration="454000" />
     </task>
     <servers />
   </component>

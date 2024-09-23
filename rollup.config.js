@@ -10,7 +10,8 @@ const json = require('rollup-plugin-json') // import 支持
 export default {
   // input: './x/redirect.js',
   // input: './x/ecpCheck/app.js',
-  input: './x/axios/index.js',
+  // input: './x/axios/index.js',
+
   output: {
     file: 'dist/xaxios.min.js',
     format: 'umd',
