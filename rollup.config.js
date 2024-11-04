@@ -10,11 +10,11 @@ const json = require('rollup-plugin-json') // import 支持
 export default {
   // input: './x/redirect.js',
   // input: './x/ecpCheck/app.js',
-  input: './x/axios/index.js',
+  input: './x/sdk/app.js',
   output: {
-    file: 'dist/xaxios.min.js',
+    file: 'dist/x-sdk.js',
     format: 'umd',
-    name: 'xaxios'
+    name: 'xsdk'
   },
   plugins: [
     postcss({

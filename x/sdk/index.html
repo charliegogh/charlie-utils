@@ -55,14 +55,6 @@
 <script src="./x-sdk.js"></script>
 <script src="./vconsole.min.js"></script>
 <script>
-
-    fetch(`https://ix.cnki.net/read/litNotes/getWeChatModel?url=https%3A%2F%2Fx.cnki.net%2Fweb%2Ftrilalreadtest%2Farticle%2FtrialXmlRead.html%3FfileName%3DXGXS202306002059%26tableName%3DIPFDTOTAL%26dbCode%3DIPFD%26fileSourceType%3D1%26groupId%3D%26appId%3DCRSP_BASIC_PSMC%26SharedTextId%3D%26act%3D%26f%3Dtr`)
-        .then((res) => res.json())
-        .then((res) => {
-            console.log(res)
-        })
-
-    new VConsole()
     const domain = document.domain.split('.')[0]
     const actionUrl = {
         xtest: 'https://xtest.cnki.net/activity?openHtml=https://xtest.cnki.net/web/test/',

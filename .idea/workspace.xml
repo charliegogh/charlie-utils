@@ -23,11 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8376e454-6cb6-41e7-b96a-99364f3bf085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x/app/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/app/sid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/x/docx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x/richtext/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/math/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/x/app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/qrcode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/vconsole.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/x-openApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/app唤起/微信开放标签方案/x-openApp.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/x-axios/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/x-axios/x-axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/x-axios/x-axios.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/docx/docx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/redirect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/sdk/x-sdk.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/x/sdk/x-sdk.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x/test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +100,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;x-sdk&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/utils/charlie-utils/x/sdk&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -97,18 +115,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\x\sdk" />
+      <recent name="E:\utils\charlie-utils\x\app" />
       <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\x\axios" />
       <recent name="E:\utils\charlie-utils\lib" />
-      <recent name="E:\utils\charlie-utils\build" />
-      <recent name="E:\utils\charlie-utils\x\ecpCheck" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\utils\charlie-utils\x\docx" />
       <recent name="E:\utils\charlie-utils\x\ecpCheck" />
       <recent name="E:\utils\charlie-utils\x" />
       <recent name="E:\utils\charlie-utils\lib" />
       <recent name="E:\utils\charlie-utils" />
-      <recent name="E:\utils\charlie-utils\output" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build-rollup">
@@ -118,7 +136,7 @@
     <configuration name="app.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/app.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lib/app.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration name="rollup.config.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/rollup.config.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
@@ -137,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build-rollup" />
+        <item itemvalue="Node.js.rollup.config.js" />
         <item itemvalue="Node.js.app.js (2)" />
         <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -513,6 +531,28 @@
       <workItem from="1725502990952" duration="6296000" />
       <workItem from="1725851937694" duration="1861000" />
       <workItem from="1726016683138" duration="10269000" />
+      <workItem from="1727088174262" duration="591000" />
+      <workItem from="1727573365069" duration="2181000" />
+      <workItem from="1728961325375" duration="604000" />
+      <workItem from="1728970738292" duration="267000" />
+      <workItem from="1729060396933" duration="1061000" />
+      <workItem from="1729068333531" duration="3086000" />
+      <workItem from="1729133262456" duration="3294000" />
+      <workItem from="1729225049992" duration="600000" />
+      <workItem from="1729230446046" duration="303000" />
+      <workItem from="1729474155735" duration="2748000" />
+      <workItem from="1729661993657" duration="15595000" />
+      <workItem from="1730197259752" duration="32000" />
+      <workItem from="1730203042797" duration="1360000" />
+      <workItem from="1730257349628" duration="2445000" />
+      <workItem from="1730285616155" duration="1391000" />
+      <workItem from="1730354363879" duration="642000" />
+      <workItem from="1730355377986" duration="1208000" />
+      <workItem from="1730360782149" duration="1709000" />
+      <workItem from="1730440720075" duration="224000" />
+      <workItem from="1730441964060" duration="2340000" />
+      <workItem from="1730445438400" duration="7000" />
+      <workItem from="1730710445322" duration="400000" />
     </task>
     <servers />
   </component>

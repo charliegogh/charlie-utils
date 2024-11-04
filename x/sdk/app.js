@@ -1,6 +1,14 @@
 import wx from 'weixin-js-sdk'
 import { getURLParams, setURLParams } from '../../lib/_'
 import './styles.css'
+function timeToSeconds(timeString) {
+  // 提取时间部分（小时、分钟、秒）
+  const timePart = timeString.split(' ')[1]
+  const [hours, minutes, seconds] = timePart.split(':').map(Number)
+
+  // 将小时、分钟、秒转换为总秒数
+  return hours * 3600 + minutes * 60 + seconds
+}
 class Xsdk {
   constructor() {
     this.options = {
@@ -28,6 +36,7 @@ class Xsdk {
       const isWeiBo = ua.toLowerCase().match(/WeiBo/i) == 'weibo'
       const isPad = screenWidth >= 500 && screenWidth <= 1200
       const isYanXueApp = ua.indexOf('psmc') !== -1
+      const isHarmony = ua.indexOf('psmc') !== -1 && ua.indexOf('OpenHarmony') !== -1
       if (isWx) {
         this.env = isAndroid ? 'Android_wx' : 'ios_wx'
       } else
@@ -37,6 +46,8 @@ class Xsdk {
         this.env = isAndroid ? 'Android_wb' : 'ios_wb'
       } else if (isYanXueApp) {
         this.env = isAndroid ? 'Android_yx' : 'ios_yx'
+      } else if (isHarmony) {
+        this.env = 'OpenHarmony_yx'
       } else {
         this.env = isAndroid ? (isPad ? 'Android_pad' : 'Android') : isIOS ? (isPad ? 'ios_pad' : 'ios') : 'pad'
         if (this.env.includes('pad')) {
@@ -52,14 +63,15 @@ class Xsdk {
       const domain = document.domain.split('.')[0]
       const api = {
         xtest: 'https://xfat.cnki.net/read/litNotes/',
-        x: 'https://ix.cnki.net/read/litNotes/'
+        x: 'https://x.cnki.net/web/wxjsdk/detection/'
       }[domain]
-      fetch(`${location.origin}/Trilalread/Member/GetWeChatModel?url=${window.location.href}`)
-      // fetch(`${api}getWeChatModel?url=${encodeURIComponent(window.location.href)}`)
+      fetch(`https://ix.cnki.net/read/litNotes/getWeChatModel?url=${encodeURIComponent(window.location.href)}`)
         .then((res) => res.json())
         .then((res) => {
+          // const date = new Date(res.content.timeStamp.replace(' ', 'T') + 'Z')
+          // const timestampInSeconds = String(Math.floor(date.getTime() / 1000))
           wx.config({
-            debug: this.options?.debug || false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            debug: this.options?.debug || false,
             appId: 'wx549fe1c34185bae9', // 必填，公众号的唯一标识
             timestamp: res.content.timeStamp, // 必填，生成签名的时间戳
             nonceStr: res.content.noncestr, // 必填，生成签名的随机串
